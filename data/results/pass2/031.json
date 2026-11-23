@@ -1,0 +1,8 @@
+{
+  "id": 31,
+  "name": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "developers.google.com/google-ads",
+  "record": null,
+  "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+}

@@ -12,6 +12,7 @@ Run agent/evidenceChecker.py and agent/composioCatalogCheck.py on fromPass befor
 """
 
 import argparse
+import json
 
 from dotenv import load_dotenv
 
@@ -21,7 +22,7 @@ from issueCollector import VERIFIER_SUFFIX, collectIssues
 from passRunner import runPass
 from pipelineConfig import PROJECT_ROOT
 from researchAgent import researchApp
-from resultStore import loadPassResults, saveResult
+from resultStore import loadPassResults, resultPath, saveResult
 from verifierAgent import verifyRecord
 
 STEP_VERIFY = "verify"
@@ -71,7 +72,7 @@ def runReResearch(fromPass, toPass, results, llmClient, toolbox, onlyIds):
         inScope = onlyIds is None or result["id"] in onlyIds
         if inScope and (issues or result["record"] is None):
             flagged.append(toApp(result))
-        else:
+        elif not alreadyReResearched(toPass, result["id"]):
             saveResult(toPass, {**result, "carriedFrom": fromPass})
     notesById = {
         appId: "\n".join(f"- {issue['message']}" for issue in issues)
@@ -87,6 +88,12 @@ def runReResearch(fromPass, toPass, results, llmClient, toolbox, onlyIds):
         lambda result: f"re-researched, model {result['model']}",
         {"record": None},
     )
+
+
+def alreadyReResearched(passName, appId):
+    """A re-researched result is never overwritten by a copy of the first-pass record."""
+    path = resultPath(passName, appId)
+    return path.exists() and "reResearchedFrom" in json.loads(path.read_text(encoding="utf-8"))
 
 
 def toApp(result):

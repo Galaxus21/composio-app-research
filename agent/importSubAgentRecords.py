@@ -1,11 +1,16 @@
-"""Adds records written by parallel Claude sub-agents to a pass, for apps the Gemini run did not finish.
+"""Adds records written by parallel Claude sub-agents to a pass.
 
     python agent/importSubAgentRecords.py --passName pass1
+    python agent/importSubAgentRecords.py --passName pass2 --reResearch --fromPass pass1
 
-Used only because the free-tier Gemini key was too slow to finish all 100 apps before the
-deadline. Every imported result is tagged with the model that produced it so the page can say
-which apps were researched by which model. An app the Gemini run already finished is never
+First form: fills apps the Gemini run did not finish (the free-tier Gemini key was too slow to
+finish all 100 apps before the deadline). An app the Gemini run already finished is never
 overwritten.
+Second form: stores sub-agent re-research of apps the checks flagged, after the Gemini
+re-research failed on 503 errors. Those results replace the carried first-pass record.
+
+Every imported result is tagged with the model that produced it so the page can say which
+apps were researched by which model.
 """
 
 import argparse
@@ -15,22 +20,29 @@ from appSchema import validateRecord
 from pipelineConfig import PROJECT_ROOT
 from resultStore import hasResult, loadApps, saveResult
 
-SUB_AGENT_FILE_PATTERN = "research*/records.json"
+RESEARCH_PATTERN = "research*/records.json"
+RERESEARCH_PATTERN = "reresearch*/records.json"
 SUB_AGENT_MODEL = "claude-haiku-5-5 (sub-agent)"
 
 
 def main():
     parser = argparse.ArgumentParser(description="Import sub-agent records into a pass.")
     parser.add_argument("--passName", required=True)
+    parser.add_argument("--reResearch", action="store_true")
+    parser.add_argument("--fromPass", default=None)
     arguments = parser.parse_args()
     appsById = {app["id"]: app for app in loadApps()}
+    pattern = RERESEARCH_PATTERN if arguments.reResearch else RESEARCH_PATTERN
     imported, kept = [], []
-    for path in sorted((PROJECT_ROOT / ".agents").glob(SUB_AGENT_FILE_PATTERN)):
+    for path in sorted((PROJECT_ROOT / ".agents").glob(pattern)):
         for item in json.loads(path.read_text(encoding="utf-8")):
-            if hasResult(arguments.passName, item["id"]):
+            if not arguments.reResearch and hasResult(arguments.passName, item["id"]):
                 kept.append(item["name"])
                 continue
-            saveResult(arguments.passName, buildResult(appsById[item["id"]], item["record"]))
+            result = buildResult(appsById[item["id"]], item["record"])
+            if arguments.reResearch:
+                result["reResearchedFrom"] = arguments.fromPass
+            saveResult(arguments.passName, result)
             imported.append(item["name"])
     print(f"imported {len(imported)}: {imported}")
     print(f"kept existing Gemini result for {len(kept)}: {kept}")
