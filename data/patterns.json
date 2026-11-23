@@ -36,8 +36,8 @@
     "noPublicApi": 3
   },
   "apiTypeCounts": {
-    "rest": 86,
-    "restAndGraphql": 6,
+    "rest": 85,
+    "restAndGraphql": 7,
     "graphql": 3,
     "other": 2,
     "cliOnly": 2,

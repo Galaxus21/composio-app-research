@@ -10,19 +10,14 @@
     ],
     "oauthAppReviewRequired": false,
     "accessLevel": "selfServeFree",
-    "apiType": "rest",
+    "apiType": "restAndGraphql",
     "apiBreadth": "broad",
     "existingMcp": "official",
     "mcpUrl": "https://github.com/intuit/quickbooks-online-mcp-server",
     "buildable": "yes",
     "mainBlocker": "none",
-    "verdictReason": "PARTLY EVIDENCED: Intuit developer pages could not be read, so apiType, apiBreadth and review requirements have no vendor quote. OAuth 2.0 is quoted from the Intuit-org MCP repo README; sandbox self-serve signup is quoted from the same README. apiType 'rest' has NO vendor quote (the Intuit developer doc pages returned only an empty 'Intuit Developer' shell), so it is unverified. apiBreadth 'broad' is inferred from that repo's README listing 29 entities with CRUD, which describes the MCP server, not the full vendor API, so it is unverified against vendor docs. existingMcp 'official' rests on the repo living under the intuit GitHub org; the README also says 'Based on Intuit's QuickBooks Online MCP Server', so the repo's official status is ambiguous and should be confirmed. oauthAppReviewRequired is false only because no vendor quote confirmed a review step; third-party guides say production keys need an Intuit publishing questionnaire and review, which is unverified. buildable 'yes' assumes the sandbox path; if production review is confirmed, change to partial with mainBlocker appReviewRequired. Quotes were obtained through a summarising fetch, not raw bytes, so they should be byte-checked before use.",
+    "verdictReason": "Verified in a real browser: OAuth 2.0 only; REST plus GraphQL; a developer account and sandbox are free. Publishing an app needs no review; only listing it on the QuickBooks App Store has a three-part review. Premium APIs (Projects, Custom Fields, Sales Tax, Payroll Compensation) are limited to Silver, Gold and Platinum partners, so the core API is buildable today but those extras are partner-gated.",
     "evidence": [
-      {
-        "field": "authMethods",
-        "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
-        "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company."
-      },
       {
         "field": "accessLevel",
         "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
@@ -32,12 +27,35 @@
         "field": "existingMcp",
         "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
         "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients."
+      },
+      {
+        "field": "authMethods",
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+        "quote": "Use the OAuth 2.0 protocol to implement authentication and authorization."
+      },
+      {
+        "field": "apiType",
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+        "quote": "The QuickBooks Online Accounting API utilizes the REST architecture and GraphQL so you can seamlessly integrate your app with QuickBooks Online"
+      },
+      {
+        "field": "apiType",
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+        "quote": "Visit the QuickBooks Online API Explorer to see all entities, fields, and parameters"
+      },
+      {
+        "field": "accessLevel",
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+        "quote": "Silver, Gold, and Platinum partners have access to Premium APIs including the Projects API, Custom Fields API, Sales Tax API, and Payroll Compensation API."
+      },
+      {
+        "field": "accessLevel",
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/go-live",
+        "quote": "Publish your app after you've thoroughly tested it. This makes it live and functional."
       }
     ]
   },
-  "validationProblems": [
-    "evidence: nothing cited for apiType"
-  ],
+  "validationProblems": [],
   "toolCalls": [],
   "usage": {},
   "hitTurnLimit": false,
