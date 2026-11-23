@@ -1,39 +1,40 @@
 {
   "totals": {
-    "apps": 88,
-    "withRecord": 84,
+    "apps": 89,
+    "withRecord": 85,
     "withoutRecord": [
-      "Slack",
       "Telegram",
       "WooCommerce",
-      "Ahrefs"
+      "Ahrefs",
+      "Supabase"
     ]
   },
   "authMethodCounts": {
-    "apiKey": 69,
-    "oauth2": 54,
-    "basic": 8,
-    "jwt": 4,
+    "apiKey": 68,
+    "oauth2": 56,
+    "basic": 9,
+    "jwt": 5,
     "none": 1
   },
   "authCombinationCounts": {
     "apiKey+oauth2": 35,
-    "apiKey": 25,
+    "apiKey": 24,
     "oauth2": 11,
     "apiKey+basic+oauth2": 5,
     "apiKey+jwt+oauth2": 2,
+    "jwt+oauth2": 2,
+    "basic+oauth2": 1,
     "apiKey+basic+jwt": 1,
     "apiKey+basic": 1,
-    "jwt+oauth2": 1,
     "basic": 1,
     "none": 1,
     "": 1
   },
   "accessLevelCounts": {
-    "selfServeFree": 59,
-    "paidPlan": 12,
-    "adminApproval": 5,
-    "selfServeTrial": 4,
+    "selfServeFree": 57,
+    "paidPlan": 13,
+    "adminApproval": 6,
+    "selfServeTrial": 5,
     "partnerGated": 2,
     "noPublicApi": 2
   },
@@ -41,24 +42,24 @@
     "rest": 72,
     "restAndGraphql": 6,
     "graphql": 3,
+    "other": 2,
     "cliOnly": 1,
-    "none": 1,
-    "other": 1
+    "none": 1
   },
   "existingMcpCounts": {
-    "official": 54,
-    "community": 16,
-    "none": 14
+    "official": 58,
+    "community": 15,
+    "none": 12
   },
   "buildableCounts": {
-    "yes": 64,
-    "partial": 16,
+    "yes": 61,
+    "partial": 20,
     "no": 4
   },
   "mainBlockerCounts": {
-    "none": 65,
-    "paidPlanRequired": 6,
-    "adminApprovalRequired": 3,
+    "none": 62,
+    "paidPlanRequired": 9,
+    "adminApprovalRequired": 4,
     "thinOrMissingDocs": 3,
     "appReviewRequired": 2,
     "partnerOrSalesGate": 2,
@@ -100,15 +101,17 @@
       "selfServe": 8
     },
     "Communications and Messaging": {
-      "apps": 8,
+      "apps": 9,
       "accessLevel": {
-        "selfServeFree": 8
+        "selfServeFree": 8,
+        "paidPlan": 1
       },
       "buildable": {
-        "yes": 8
+        "yes": 8,
+        "partial": 1
       },
       "existingMcp": {
-        "official": 5,
+        "official": 6,
         "none": 1,
         "community": 2
       },
@@ -117,20 +120,21 @@
     "Marketing, Ads, Email and Social": {
       "apps": 10,
       "accessLevel": {
-        "selfServeFree": 7,
-        "adminApproval": 3
+        "adminApproval": 4,
+        "selfServeFree": 5,
+        "selfServeTrial": 1
       },
       "buildable": {
-        "yes": 7,
-        "partial": 2,
+        "partial": 4,
+        "yes": 5,
         "no": 1
       },
       "existingMcp": {
-        "none": 4,
-        "official": 4,
-        "community": 2
+        "official": 6,
+        "none": 3,
+        "community": 1
       },
-      "selfServe": 7
+      "selfServe": 6
     },
     "Ecommerce": {
       "apps": 9,
@@ -160,14 +164,14 @@
         "partnerGated": 1
       },
       "buildable": {
-        "yes": 6,
-        "no": 1,
-        "partial": 2
+        "yes": 5,
+        "partial": 3,
+        "no": 1
       },
       "existingMcp": {
-        "none": 3,
-        "official": 5,
-        "community": 1
+        "official": 6,
+        "community": 1,
+        "none": 2
       },
       "selfServe": 7
     },
@@ -256,21 +260,19 @@
     "Plain",
     "Help Scout",
     "Gorgias",
+    "Slack",
     "Twilio",
     "Zoho Cliq",
     "Lark (Larksuite)",
     "Pumble",
     "Discord",
     "WhatsApp Business",
-    "Aircall",
     "Vonage",
-    "Google Ads",
     "Meta Ads",
     "GoHighLevel",
     "Mailchimp",
     "Klaviyo",
     "systeme.io",
-    "SendGrid",
     "Shopify",
     "BigCommerce",
     "Magento (Adobe Commerce)",
@@ -278,7 +280,6 @@
     "Gumroad",
     "fanbasis",
     "DataForSEO",
-    "SE Ranking",
     "MrScraper",
     "Apify",
     "Firecrawl",
@@ -300,6 +301,7 @@
     "YouTube Transcript"
   ],
   "needsOutreach": [
+    "Google Ads",
     "LinkedIn Ads",
     "Pinterest",
     "Threads (Meta)",
@@ -315,7 +317,7 @@
     "Paygent Connect"
   ],
   "composioCatalog": {
-    "alreadyInCatalog": 65,
+    "alreadyInCatalog": 66,
     "notInCatalog": [
       "DealCloud",
       "LiveAgent",
@@ -345,7 +347,6 @@
       "Magento (Adobe Commerce)",
       "Ecwid",
       "fanbasis",
-      "SE Ranking",
       "Binance",
       "Reducto"
     ]

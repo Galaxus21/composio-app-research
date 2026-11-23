@@ -4,6 +4,6 @@
   "category": "Ecommerce",
   "hint": "woocommerce.com/document/woocommerce-rest-api",
   "record": null,
-  "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+  "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
   "carriedFrom": "pass1"
 }
