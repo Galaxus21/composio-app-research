@@ -8,9 +8,8 @@
     "apiKey",
     "oauth2"
   ],
-  "status": "noRecord",
+  "status": "disagrees",
   "missing": [
-    "apiKey",
-    "oauth2"
+    "apiKey"
   ]
 }

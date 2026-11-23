@@ -4414,13 +4414,143 @@
    "name": "Telegram",
    "category": "Communications and Messaging",
    "hint": "core.telegram.org",
-   "record": null,
-   "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "Bot API for building bots that send and receive Telegram messages over HTTPS, authenticated with a bot token from @BotFather.",
+    "authMethods": [
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "community",
+    "mcpUrl": "https://github.com/TONresistor/telegram-mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "A free bot token is created self-serve through @BotFather and the Bot API covers messages, updates, chats and settings. Only community MCP servers exist, which Composio could replace with its own toolkit.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://core.telegram.org/bots",
+      "quote": "Each bot is given a unique authentication token when it is created."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://core.telegram.org/bots",
+      "quote": "The Telegram Bot Platform hosts more than 10 million bots and is free for both users and developers."
+     },
+     {
+      "field": "apiType",
+      "url": "https://core.telegram.org/bots/api",
+      "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://github.com/TONresistor/telegram-mcp",
+      "quote": "Production-ready MCP server for the complete Telegram Bot API."
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "Bot API for building bots that send and receive Telegram messages over HTTPS, authenticated with a bot token from @BotFather.",
+    "authMethods": [
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "community",
+    "mcpUrl": "https://github.com/TONresistor/telegram-mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "A free bot token is created self-serve through @BotFather and the Bot API covers messages, updates, chats and settings. Only community MCP servers exist, which Composio could replace with its own toolkit.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://core.telegram.org/bots",
+      "quote": "Each bot is given a unique authentication token when it is created."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://core.telegram.org/bots",
+      "quote": "The Telegram Bot Platform hosts more than 10 million bots and is free for both users and developers."
+     },
+     {
+      "field": "apiType",
+      "url": "https://core.telegram.org/bots/api",
+      "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://github.com/TONresistor/telegram-mcp",
+      "quote": "Production-ready MCP server for the complete Telegram Bot API."
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://core.telegram.org/bots",
+     "quote": "Each bot is given a unique authentication token when it is created.",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://core.telegram.org/bots",
+     "quote": "The Telegram Bot Platform hosts more than 10 million bots and is free for both users and developers.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://core.telegram.org/bots/api",
+     "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://github.com/TONresistor/telegram-mcp",
+     "quote": "Production-ready MCP server for the complete Telegram Bot API.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://core.telegram.org/bots",
+     "quote": "Each bot is given a unique authentication token when it is created.",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://core.telegram.org/bots",
+     "quote": "The Telegram Bot Platform hosts more than 10 million bots and is free for both users and developers.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://core.telegram.org/bots/api",
+     "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://github.com/TONresistor/telegram-mcp",
+     "quote": "Production-ready MCP server for the complete Telegram Bot API.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 27,
@@ -4431,10 +4561,8 @@
     "composioAuthMethods": [
      "apiKey"
     ],
-    "status": "noRecord",
-    "missing": [
-     "apiKey"
-    ]
+    "status": "agrees",
+    "missing": []
    }
   },
   {
@@ -6867,13 +6995,171 @@
    "name": "WooCommerce",
    "category": "Ecommerce",
    "hint": "woocommerce.com/document/woocommerce-rest-api",
-   "record": null,
-   "error": "ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "REST API for reading and writing WooCommerce store data such as products, orders, customers and coupons, authenticated with store-generated consumer keys.",
+    "authMethods": [
+     "apiKey",
+     "basic",
+     "other"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://developer.woocommerce.com/docs/features/mcp/",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "Consumer keys are generated in the store admin with no approval, and the REST API documents most core resources. The official MCP support is a developer preview that needs the WordPress MCP Adapter, so the REST API is the more stable route.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password."
+     },
+     {
+      "field": "authMethods",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "You must use OAuth 1.0a \"one-legged\" authentication to ensure REST API credentials cannot be intercepted by an attacker."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "quote": "Go to WooCommerce > Settings > Advanced > REST API."
+     },
+     {
+      "field": "apiType",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "By default, the API provides information about all available endpoints on the site."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://developer.woocommerce.com/docs/features/mcp/",
+      "quote": "The MCP implementation in WooCommerce is currently in developer preview."
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "REST API for reading and writing WooCommerce store data such as products, orders, customers and coupons, authenticated with store-generated consumer keys.",
+    "authMethods": [
+     "apiKey",
+     "basic",
+     "other"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://developer.woocommerce.com/docs/features/mcp/",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "Consumer keys are generated in the store admin with no approval, and the REST API documents most core resources. The official MCP support is a developer preview that needs the WordPress MCP Adapter, so the REST API is the more stable route.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password."
+     },
+     {
+      "field": "authMethods",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "You must use OAuth 1.0a \"one-legged\" authentication to ensure REST API credentials cannot be intercepted by an attacker."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "quote": "Go to WooCommerce > Settings > Advanced > REST API."
+     },
+     {
+      "field": "apiType",
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "quote": "By default, the API provides information about all available endpoints on the site."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://developer.woocommerce.com/docs/features/mcp/",
+      "quote": "The MCP implementation in WooCommerce is currently in developer preview."
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+     "quote": "by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "authMethods",
+     "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+     "quote": "You must use OAuth 1.0a \"one-legged\" authentication to ensure REST API credentials cannot be intercepted by an attacker.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+     "quote": "Go to WooCommerce > Settings > Advanced > REST API.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+     "quote": "By default, the API provides information about all available endpoints on the site.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://developer.woocommerce.com/docs/features/mcp/",
+     "quote": "The MCP implementation in WooCommerce is currently in developer preview.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+     "quote": "by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "authMethods",
+     "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+     "quote": "You must use OAuth 1.0a \"one-legged\" authentication to ensure REST API credentials cannot be intercepted by an attacker.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+     "quote": "Go to WooCommerce > Settings > Advanced > REST API.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+     "quote": "By default, the API provides information about all available endpoints on the site.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://developer.woocommerce.com/docs/features/mcp/",
+     "quote": "The MCP implementation in WooCommerce is currently in developer preview.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 42,
@@ -8535,13 +8821,143 @@
    "name": "Ahrefs",
    "category": "Data, SEO and Scraping",
    "hint": "ahrefs.com/api",
-   "record": null,
-   "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "SEO data API (Site Explorer, Keywords Explorer, Rank Tracker and more) that uses API keys and consumes monthly API units.",
+    "authMethods": [
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "paidPlan",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://docs.ahrefs.com/mcp/docs/introduction",
+    "buildable": "partial",
+    "mainBlocker": "paidPlanRequired",
+    "verdictReason": "API v3 access requires a Lite or higher paid subscription and consumes API units, so it cannot be used on a free account. Keys are self-serve once a paid plan is held, and Ahrefs publishes a hosted MCP server on paid plans.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://docs.ahrefs.com/",
+      "quote": "Create and manage your API keys"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+      "quote": "Using API v3 from any of the above methods is possible for Lite and higher subscription plans."
+     },
+     {
+      "field": "apiType",
+      "url": "https://docs.ahrefs.com/",
+      "quote": "Browse all available API endpoints"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://docs.ahrefs.com/mcp/docs/introduction",
+      "quote": "The remote MCP server is available on paid plans starting from Lite."
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "SEO data API (Site Explorer, Keywords Explorer, Rank Tracker and more) that uses API keys and consumes monthly API units.",
+    "authMethods": [
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "paidPlan",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://docs.ahrefs.com/mcp/docs/introduction",
+    "buildable": "partial",
+    "mainBlocker": "paidPlanRequired",
+    "verdictReason": "API v3 access requires a Lite or higher paid subscription and consumes API units, so it cannot be used on a free account. Keys are self-serve once a paid plan is held, and Ahrefs publishes a hosted MCP server on paid plans.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://docs.ahrefs.com/",
+      "quote": "Create and manage your API keys"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+      "quote": "Using API v3 from any of the above methods is possible for Lite and higher subscription plans."
+     },
+     {
+      "field": "apiType",
+      "url": "https://docs.ahrefs.com/",
+      "quote": "Browse all available API endpoints"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://docs.ahrefs.com/mcp/docs/introduction",
+      "quote": "The remote MCP server is available on paid plans starting from Lite."
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://docs.ahrefs.com/",
+     "quote": "Create and manage your API keys",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+     "quote": "Using API v3 from any of the above methods is possible for Lite and higher subscription plans.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://docs.ahrefs.com/",
+     "quote": "Browse all available API endpoints",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://docs.ahrefs.com/mcp/docs/introduction",
+     "quote": "The remote MCP server is available on paid plans starting from Lite.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://docs.ahrefs.com/",
+     "quote": "Create and manage your API keys",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+     "quote": "Using API v3 from any of the above methods is possible for Lite and higher subscription plans.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://docs.ahrefs.com/",
+     "quote": "Browse all available API endpoints",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://docs.ahrefs.com/mcp/docs/introduction",
+     "quote": "The remote MCP server is available on paid plans starting from Lite.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 53,
@@ -8553,9 +8969,8 @@
      "apiKey",
      "oauth2"
     ],
-    "status": "noRecord",
+    "status": "disagrees",
     "missing": [
-     "apiKey",
      "oauth2"
     ]
    }
@@ -9894,13 +10309,143 @@
    "name": "Vercel",
    "category": "Developer, Infra and Data platforms",
    "hint": "vercel.com/docs/rest-api",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "REST API for managing Vercel teams, projects, deployments and domains, authenticated with bearer access tokens.",
+    "authMethods": [
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://vercel.com/docs/agent-resources/vercel-mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "Access tokens are created through the API or dashboard on the free Hobby plan with no approval, and the REST reference covers a broad set of resources. Vercel also publishes an official MCP server.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token.md",
+      "quote": "**bearerToken**: HTTP bearer"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://vercel.com/docs/plans/hobby",
+      "quote": "The Hobby plan is **free** and includes a generous set of features on a **per month** basis:"
+     },
+     {
+      "field": "apiType",
+      "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token.md",
+      "quote": "POST /v3/user/tokens"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "quote": "Vercel MCP is Vercel's official MCP server."
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "REST API for managing Vercel teams, projects, deployments and domains, authenticated with bearer access tokens.",
+    "authMethods": [
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://vercel.com/docs/agent-resources/vercel-mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "Access tokens are created through the API or dashboard on the free Hobby plan with no approval, and the REST reference covers a broad set of resources. Vercel also publishes an official MCP server.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token.md",
+      "quote": "**bearerToken**: HTTP bearer"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://vercel.com/docs/plans/hobby",
+      "quote": "The Hobby plan is **free** and includes a generous set of features on a **per month** basis:"
+     },
+     {
+      "field": "apiType",
+      "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token.md",
+      "quote": "POST /v3/user/tokens"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "quote": "Vercel MCP is Vercel's official MCP server."
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token.md",
+     "quote": "**bearerToken**: HTTP bearer",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://vercel.com/docs/plans/hobby",
+     "quote": "The Hobby plan is **free** and includes a generous set of features on a **per month** basis:",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token.md",
+     "quote": "POST /v3/user/tokens",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+     "quote": "Vercel MCP is Vercel's official MCP server.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token.md",
+     "quote": "**bearerToken**: HTTP bearer",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://vercel.com/docs/plans/hobby",
+     "quote": "The Hobby plan is **free** and includes a generous set of features on a **per month** basis:",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token.md",
+     "quote": "POST /v3/user/tokens",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+     "quote": "Vercel MCP is Vercel's official MCP server.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 62,
@@ -9912,9 +10457,8 @@
      "apiKey",
      "oauth2"
     ],
-    "status": "noRecord",
+    "status": "disagrees",
     "missing": [
-     "apiKey",
      "oauth2"
     ]
    }
@@ -10244,13 +10788,169 @@
    "name": "Supabase",
    "category": "Developer, Infra and Data platforms",
    "hint": "supabase.com/docs",
-   "record": null,
-   "error": "ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "Hosted Postgres platform with an auto-generated REST API for database tables and a Management API for projects, authenticated with API keys, personal access tokens or OAuth2.",
+    "authMethods": [
+     "apiKey",
+     "oauth2"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "official",
+    "mcpUrl": "https://supabase.com/docs/guides/getting-started/mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "A free plan includes API access and project API keys are self-serve in the dashboard. The Data REST API is schema-driven, and the Management API is documented with personal access tokens; an official hosted MCP server also exists.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://supabase.com/docs/guides/api",
+      "quote": "You can find the API Keys in the Settings > API Keys section of the Dashboard."
+     },
+     {
+      "field": "authMethods",
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://supabase.com/pricing",
+      "quote": "Free: $0/month, including 500 MB database size."
+     },
+     {
+      "field": "apiType",
+      "url": "https://supabase.com/docs/guides/api",
+      "quote": "Supabase auto-generates an API directly from your database schema"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://supabase.com/docs/guides/getting-started/mcp",
+      "quote": "The hosted Supabase MCP server is available at https://mcp.supabase.com/mcp."
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "Hosted Postgres platform with an auto-generated REST API for database tables and a Management API for projects, authenticated with API keys, personal access tokens or OAuth2.",
+    "authMethods": [
+     "apiKey",
+     "oauth2"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "official",
+    "mcpUrl": "https://supabase.com/docs/guides/getting-started/mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "A free plan includes API access and project API keys are self-serve in the dashboard. The Data REST API is schema-driven, and the Management API is documented with personal access tokens; an official hosted MCP server also exists.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://supabase.com/docs/guides/api",
+      "quote": "You can find the API Keys in the Settings > API Keys section of the Dashboard."
+     },
+     {
+      "field": "authMethods",
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://supabase.com/pricing",
+      "quote": "Free: $0/month, including 500 MB database size."
+     },
+     {
+      "field": "apiType",
+      "url": "https://supabase.com/docs/guides/api",
+      "quote": "Supabase auto-generates an API directly from your database schema"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://supabase.com/docs/guides/getting-started/mcp",
+      "quote": "The hosted Supabase MCP server is available at https://mcp.supabase.com/mcp."
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://supabase.com/docs/guides/api",
+     "quote": "You can find the API Keys in the Settings > API Keys section of the Dashboard.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "authMethods",
+     "url": "https://supabase.com/docs/reference/api/introduction",
+     "quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://supabase.com/pricing",
+     "quote": "Free: $0/month, including 500 MB database size.",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "apiType",
+     "url": "https://supabase.com/docs/guides/api",
+     "quote": "Supabase auto-generates an API directly from your database schema",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://supabase.com/docs/guides/getting-started/mcp",
+     "quote": "The hosted Supabase MCP server is available at https://mcp.supabase.com/mcp.",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://supabase.com/docs/guides/api",
+     "quote": "You can find the API Keys in the Settings > API Keys section of the Dashboard.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "authMethods",
+     "url": "https://supabase.com/docs/reference/api/introduction",
+     "quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://supabase.com/pricing",
+     "quote": "Free: $0/month, including 500 MB database size.",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "apiType",
+     "url": "https://supabase.com/docs/guides/api",
+     "quote": "Supabase auto-generates an API directly from your database schema",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://supabase.com/docs/guides/getting-started/mcp",
+     "quote": "The hosted Supabase MCP server is available at https://mcp.supabase.com/mcp.",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 65,
@@ -10262,11 +10962,8 @@
      "apiKey",
      "oauth2"
     ],
-    "status": "noRecord",
-    "missing": [
-     "apiKey",
-     "oauth2"
-    ]
+    "status": "agrees",
+    "missing": []
    }
   },
   {
@@ -10441,13 +11138,123 @@
    "name": "Snowflake",
    "category": "Developer, Infra and Data platforms",
    "hint": "docs.snowflake.com",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "Cloud data platform with REST and SQL APIs that accept key pair JWT, OAuth, and programmatic access tokens, plus a Snowflake-managed MCP server.",
+    "authMethods": [
+     "oauth2",
+     "jwt",
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeTrial",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "official",
+    "mcpUrl": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "buildable": "partial",
+    "mainBlocker": "paidPlanRequired",
+    "verdictReason": "Free access is a 30-day trial, after which a paid account is needed for continued API use. The vendor docs document OAuth, key pair JWT and PAT auth, and an official managed MCP server. apiType and apiBreadth evidence was not captured verbatim from fetched pages, so those values are unverified.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "quote": "To use OAuth, follow these steps:"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+      "quote": "A Snowflake trial account lets you evaluate/test Snowflake's full range of innovative and powerful features with no cost or contractual obligations."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+      "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts"
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "Cloud data platform with REST and SQL APIs that accept key pair JWT, OAuth, and programmatic access tokens, plus a Snowflake-managed MCP server.",
+    "authMethods": [
+     "oauth2",
+     "jwt",
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeTrial",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "official",
+    "mcpUrl": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "buildable": "partial",
+    "mainBlocker": "paidPlanRequired",
+    "verdictReason": "Free access is a 30-day trial, after which a paid account is needed for continued API use. The vendor docs document OAuth, key pair JWT and PAT auth, and an official managed MCP server. apiType and apiBreadth evidence was not captured verbatim from fetched pages, so those values are unverified.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "quote": "To use OAuth, follow these steps:"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+      "quote": "A Snowflake trial account lets you evaluate/test Snowflake's full range of innovative and powerful features with no cost or contractual obligations."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+      "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts"
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+     "quote": "To use OAuth, follow these steps:",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+     "quote": "A Snowflake trial account lets you evaluate/test Snowflake's full range of innovative and powerful features with no cost or contractual obligations.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+     "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+     "quote": "To use OAuth, follow these steps:",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+     "quote": "A Snowflake trial account lets you evaluate/test Snowflake's full range of innovative and powerful features with no cost or contractual obligations.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+     "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 67,
@@ -10458,10 +11265,8 @@
     "composioAuthMethods": [
      "oauth2"
     ],
-    "status": "noRecord",
-    "missing": [
-     "oauth2"
-    ]
+    "status": "agrees",
+    "missing": []
    }
   },
   {
@@ -10961,13 +11766,121 @@
    "name": "Notion",
    "category": "Productivity and Project Management",
    "hint": "developers.notion.com",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "Workspace docs and database platform with a REST API authenticated by internal connection tokens or OAuth 2.0, plus an official Notion MCP server.",
+    "authMethods": [
+     "apiKey",
+     "oauth2"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://developers.notion.com/guides/mcp/mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "Internal connection tokens and personal access tokens are created self-serve in the Notion developer portal, and the docs say marketplace review is not required for OAuth. The official MCP server is documented. apiType and apiBreadth evidence was not captured verbatim, so those values are unverified.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "use a static credential called an internal connection API token"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "Personal access tokens (PATs) are created directly by a Notion user in the Developer portal."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://developers.notion.com/guides/mcp/mcp",
+      "quote": "Notion MCP lets your AI assistant search your workspace, create and edit pages, and manage databases."
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "Workspace docs and database platform with a REST API authenticated by internal connection tokens or OAuth 2.0, plus an official Notion MCP server.",
+    "authMethods": [
+     "apiKey",
+     "oauth2"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://developers.notion.com/guides/mcp/mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "Internal connection tokens and personal access tokens are created self-serve in the Notion developer portal, and the docs say marketplace review is not required for OAuth. The official MCP server is documented. apiType and apiBreadth evidence was not captured verbatim, so those values are unverified.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "use a static credential called an internal connection API token"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://developers.notion.com/guides/get-started/authorization",
+      "quote": "Personal access tokens (PATs) are created directly by a Notion user in the Developer portal."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://developers.notion.com/guides/mcp/mcp",
+      "quote": "Notion MCP lets your AI assistant search your workspace, create and edit pages, and manage databases."
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://developers.notion.com/guides/get-started/authorization",
+     "quote": "use a static credential called an internal connection API token",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://developers.notion.com/guides/get-started/authorization",
+     "quote": "Personal access tokens (PATs) are created directly by a Notion user in the Developer portal.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://developers.notion.com/guides/mcp/mcp",
+     "quote": "Notion MCP lets your AI assistant search your workspace, create and edit pages, and manage databases.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://developers.notion.com/guides/get-started/authorization",
+     "quote": "use a static credential called an internal connection API token",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://developers.notion.com/guides/get-started/authorization",
+     "quote": "Personal access tokens (PATs) are created directly by a Notion user in the Developer portal.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://developers.notion.com/guides/mcp/mcp",
+     "quote": "Notion MCP lets your AI assistant search your workspace, create and edit pages, and manage databases.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 71,
@@ -10979,11 +11892,8 @@
      "apiKey",
      "oauth2"
     ],
-    "status": "noRecord",
-    "missing": [
-     "apiKey",
-     "oauth2"
-    ]
+    "status": "agrees",
+    "missing": []
    }
   },
   {
@@ -11346,13 +12256,121 @@
    "name": "Jira",
    "category": "Productivity and Project Management",
    "hint": "developer.atlassian.com",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "Atlassian issue-tracking REST API with OAuth 2.0 (3LO) and API-token Basic auth, plus Atlassian's cloud-hosted Rovo MCP server.",
+    "authMethods": [
+     "oauth2",
+     "basic"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://developer.atlassian.com/cloud/rovo-mcp/",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "A free Cloud Developer Bundle site lets developers create OAuth 2.0 (3LO) apps and API tokens self-serve. The official Rovo MCP server is documented. apiType and apiBreadth evidence was not captured verbatim, so those values are unverified.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+      "quote": "allows external applications and services to access Atlassian product APIs on a user's behalf."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started/",
+      "quote": "The Cloud Developer Bundle provides a free Atlassian cloud development site for building and testing apps."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+      "quote": "The Atlassian Rovo MCP Server is a cloud-hosted Model Context Protocol (MCP) server"
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "Atlassian issue-tracking REST API with OAuth 2.0 (3LO) and API-token Basic auth, plus Atlassian's cloud-hosted Rovo MCP server.",
+    "authMethods": [
+     "oauth2",
+     "basic"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://developer.atlassian.com/cloud/rovo-mcp/",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "A free Cloud Developer Bundle site lets developers create OAuth 2.0 (3LO) apps and API tokens self-serve. The official Rovo MCP server is documented. apiType and apiBreadth evidence was not captured verbatim, so those values are unverified.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+      "quote": "allows external applications and services to access Atlassian product APIs on a user's behalf."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started/",
+      "quote": "The Cloud Developer Bundle provides a free Atlassian cloud development site for building and testing apps."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+      "quote": "The Atlassian Rovo MCP Server is a cloud-hosted Model Context Protocol (MCP) server"
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+     "quote": "allows external applications and services to access Atlassian product APIs on a user's behalf.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started/",
+     "quote": "The Cloud Developer Bundle provides a free Atlassian cloud development site for building and testing apps.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+     "quote": "The Atlassian Rovo MCP Server is a cloud-hosted Model Context Protocol (MCP) server",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+     "quote": "allows external applications and services to access Atlassian product APIs on a user's behalf.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started/",
+     "quote": "The Cloud Developer Bundle provides a free Atlassian cloud development site for building and testing apps.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+     "quote": "The Atlassian Rovo MCP Server is a cloud-hosted Model Context Protocol (MCP) server",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 74,
@@ -11364,10 +12382,9 @@
      "apiKey",
      "oauth2"
     ],
-    "status": "noRecord",
+    "status": "disagrees",
     "missing": [
-     "apiKey",
-     "oauth2"
+     "apiKey"
     ]
    }
   },
@@ -11857,13 +12874,119 @@
    "name": "Coda",
    "category": "Productivity and Project Management",
    "hint": "coda.io/developers",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "Docs-and-tables platform (now Superhuman Docs) with a REST API using bearer API tokens, plus an official Coda MCP endpoint.",
+    "authMethods": [
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://coda.io/apis/mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "UNVERIFIED IN PART: the API page confirms bearer-token auth and broad read/write of rows and pages, but no fetched page states how to obtain a token or confirms the free tier, so accessLevel is unverified. The MCP evidence quote could not be fetched (help pages returned HTTP 403), so existingMcp rests on a search result only. The coda.io URL redirected to docs.superhuman.com, which is treated as the vendor's documentation.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "headers = {'Authorization': 'Bearer <your API token>'}"
+     },
+     {
+      "field": "apiType",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):"
+     },
+     {
+      "field": "apiBreadth",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "Read, insert, upsert, update, and delete rows"
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "Docs-and-tables platform (now Superhuman Docs) with a REST API using bearer API tokens, plus an official Coda MCP endpoint.",
+    "authMethods": [
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://coda.io/apis/mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "UNVERIFIED IN PART: the API page confirms bearer-token auth and broad read/write of rows and pages, but no fetched page states how to obtain a token or confirms the free tier, so accessLevel is unverified. The MCP evidence quote could not be fetched (help pages returned HTTP 403), so existingMcp rests on a search result only. The coda.io URL redirected to docs.superhuman.com, which is treated as the vendor's documentation.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "headers = {'Authorization': 'Bearer <your API token>'}"
+     },
+     {
+      "field": "apiType",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):"
+     },
+     {
+      "field": "apiBreadth",
+      "url": "https://docs.superhuman.com/developers/apis/v1",
+      "quote": "Read, insert, upsert, update, and delete rows"
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://docs.superhuman.com/developers/apis/v1",
+     "quote": "headers = {'Authorization': 'Bearer <your API token>'}",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://docs.superhuman.com/developers/apis/v1",
+     "quote": "a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiBreadth",
+     "url": "https://docs.superhuman.com/developers/apis/v1",
+     "quote": "Read, insert, upsert, update, and delete rows",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://docs.superhuman.com/developers/apis/v1",
+     "quote": "headers = {'Authorization': 'Bearer <your API token>'}",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://docs.superhuman.com/developers/apis/v1",
+     "quote": "a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiBreadth",
+     "url": "https://docs.superhuman.com/developers/apis/v1",
+     "quote": "Read, insert, upsert, update, and delete rows",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 78,
@@ -11874,10 +12997,8 @@
     "composioAuthMethods": [
      "apiKey"
     ],
-    "status": "noRecord",
-    "missing": [
-     "apiKey"
-    ]
+    "status": "agrees",
+    "missing": []
    }
   },
   {
@@ -13175,13 +14296,169 @@
    "name": "Brex",
    "category": "Finance and Fintech",
    "hint": "developer.brex.com",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "Business finance platform (cards, expenses, transactions, accounting) with a REST API for internal tools and workflows.",
+    "authMethods": [
+     "oauth2",
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://developer.brex.com/docs/mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "Official Brex MCP server (beta) supports OAuth and API tokens; the API token is generated by an account or card admin after accepting the Developer API agreement, with no separate approval step stated on the pages read. Requires an existing Brex account, and the MCP server is documented as beta.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://developer.brex.com/docs/authentication/",
+      "quote": "generate a user token from your Brex dashboard and pass it along in your API call headers"
+     },
+     {
+      "field": "authMethods",
+      "url": "https://developer.brex.com/docs/mcp",
+      "quote": "Prefer OAuth over API keys."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://developer.brex.com/docs/authentication/",
+      "quote": "These must be accepted to use the developer API."
+     },
+     {
+      "field": "apiType",
+      "url": "https://developer.brex.com/",
+      "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://developer.brex.com/docs/mcp",
+      "quote": "The server is hosted at https://api.brex.com/mcp and supports any MCP-compatible client."
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "Business finance platform (cards, expenses, transactions, accounting) with a REST API for internal tools and workflows.",
+    "authMethods": [
+     "oauth2",
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://developer.brex.com/docs/mcp",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "Official Brex MCP server (beta) supports OAuth and API tokens; the API token is generated by an account or card admin after accepting the Developer API agreement, with no separate approval step stated on the pages read. Requires an existing Brex account, and the MCP server is documented as beta.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://developer.brex.com/docs/authentication/",
+      "quote": "generate a user token from your Brex dashboard and pass it along in your API call headers"
+     },
+     {
+      "field": "authMethods",
+      "url": "https://developer.brex.com/docs/mcp",
+      "quote": "Prefer OAuth over API keys."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://developer.brex.com/docs/authentication/",
+      "quote": "These must be accepted to use the developer API."
+     },
+     {
+      "field": "apiType",
+      "url": "https://developer.brex.com/",
+      "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://developer.brex.com/docs/mcp",
+      "quote": "The server is hosted at https://api.brex.com/mcp and supports any MCP-compatible client."
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://developer.brex.com/docs/authentication/",
+     "quote": "generate a user token from your Brex dashboard and pass it along in your API call headers",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "authMethods",
+     "url": "https://developer.brex.com/docs/mcp",
+     "quote": "Prefer OAuth over API keys.",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://developer.brex.com/docs/authentication/",
+     "quote": "These must be accepted to use the developer API.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://developer.brex.com/",
+     "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://developer.brex.com/docs/mcp",
+     "quote": "The server is hosted at https://api.brex.com/mcp and supports any MCP-compatible client.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://developer.brex.com/docs/authentication/",
+     "quote": "generate a user token from your Brex dashboard and pass it along in your API call headers",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "authMethods",
+     "url": "https://developer.brex.com/docs/mcp",
+     "quote": "Prefer OAuth over API keys.",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://developer.brex.com/docs/authentication/",
+     "quote": "These must be accepted to use the developer API.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://developer.brex.com/",
+     "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://developer.brex.com/docs/mcp",
+     "quote": "The server is hosted at https://api.brex.com/mcp and supports any MCP-compatible client.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 88,
@@ -13193,11 +14470,8 @@
      "apiKey",
      "oauth2"
     ],
-    "status": "noRecord",
-    "missing": [
-     "apiKey",
-     "oauth2"
-    ]
+    "status": "agrees",
+    "missing": []
    }
   },
   {
@@ -13733,13 +15007,169 @@
    "name": "Fathom",
    "category": "AI, Research and Media-native",
    "hint": "fathom.video",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "AI meeting notetaker that exposes meetings, recordings, summaries, transcripts and webhooks through a REST API and an official MCP server.",
+    "authMethods": [
+     "apiKey",
+     "oauth2"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "official",
+    "mcpUrl": "https://developers.fathom.ai/mcp-docs",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "API key generated self-serve in User Settings and included on all plans; OAuth is for apps other users install. Coverage is read-leaning (meetings, recordings summary/transcript, teams, users) plus webhook create/delete, so breadth is medium. Official MCP server exists at https://api.fathom.ai/mcp.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://developers.fathom.ai/quickstart",
+      "quote": "Head to the API Access section of your User Settings and generate an API key."
+     },
+     {
+      "field": "authMethods",
+      "url": "https://developers.fathom.ai/faq",
+      "quote": "Use OAuth if you're building an app that other Fathom users will install so they can connect their own accounts."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://developers.fathom.ai/faq",
+      "quote": "Yes. API access\u2014keys and webhooks\u2014 are included on all plans."
+     },
+     {
+      "field": "apiType",
+      "url": "https://developers.fathom.ai/api-reference/openapi.yaml",
+      "quote": "The Fathom External API lets you poll meetings, teams, and team members, and optionally receive webhooks"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://developers.fathom.ai/mcp-docs",
+      "quote": "Fathom now offers an official MCP (Model Context Protocol) server"
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "AI meeting notetaker that exposes meetings, recordings, summaries, transcripts and webhooks through a REST API and an official MCP server.",
+    "authMethods": [
+     "apiKey",
+     "oauth2"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "official",
+    "mcpUrl": "https://developers.fathom.ai/mcp-docs",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "API key generated self-serve in User Settings and included on all plans; OAuth is for apps other users install. Coverage is read-leaning (meetings, recordings summary/transcript, teams, users) plus webhook create/delete, so breadth is medium. Official MCP server exists at https://api.fathom.ai/mcp.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://developers.fathom.ai/quickstart",
+      "quote": "Head to the API Access section of your User Settings and generate an API key."
+     },
+     {
+      "field": "authMethods",
+      "url": "https://developers.fathom.ai/faq",
+      "quote": "Use OAuth if you're building an app that other Fathom users will install so they can connect their own accounts."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://developers.fathom.ai/faq",
+      "quote": "Yes. API access\u2014keys and webhooks\u2014 are included on all plans."
+     },
+     {
+      "field": "apiType",
+      "url": "https://developers.fathom.ai/api-reference/openapi.yaml",
+      "quote": "The Fathom External API lets you poll meetings, teams, and team members, and optionally receive webhooks"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://developers.fathom.ai/mcp-docs",
+      "quote": "Fathom now offers an official MCP (Model Context Protocol) server"
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://developers.fathom.ai/quickstart",
+     "quote": "Head to the API Access section of your User Settings and generate an API key.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "authMethods",
+     "url": "https://developers.fathom.ai/faq",
+     "quote": "Use OAuth if you're building an app that other Fathom users will install so they can connect their own accounts.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://developers.fathom.ai/faq",
+     "quote": "Yes. API access\u2014keys and webhooks\u2014 are included on all plans.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://developers.fathom.ai/api-reference/openapi.yaml",
+     "quote": "The Fathom External API lets you poll meetings, teams, and team members, and optionally receive webhooks",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://developers.fathom.ai/mcp-docs",
+     "quote": "Fathom now offers an official MCP (Model Context Protocol) server",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://developers.fathom.ai/quickstart",
+     "quote": "Head to the API Access section of your User Settings and generate an API key.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "authMethods",
+     "url": "https://developers.fathom.ai/faq",
+     "quote": "Use OAuth if you're building an app that other Fathom users will install so they can connect their own accounts.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://developers.fathom.ai/faq",
+     "quote": "Yes. API access\u2014keys and webhooks\u2014 are included on all plans.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://developers.fathom.ai/api-reference/openapi.yaml",
+     "quote": "The Fathom External API lets you poll meetings, teams, and team members, and optionally receive webhooks",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://developers.fathom.ai/mcp-docs",
+     "quote": "Fathom now offers an official MCP (Model Context Protocol) server",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 93,
@@ -13751,11 +15181,8 @@
      "apiKey",
      "oauth2"
     ],
-    "status": "noRecord",
-    "missing": [
-     "apiKey",
-     "oauth2"
-    ]
+    "status": "agrees",
+    "missing": []
    }
   },
   {
@@ -14408,13 +15835,143 @@
    "name": "Mermaid CLI",
    "category": "AI, Research and Media-native",
    "hint": "github.com/mermaid-js/mermaid-cli",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "Command-line tool that renders Mermaid diagram definition files to SVG, PNG or PDF.",
+    "authMethods": [
+     "none"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "noPublicApi",
+    "apiType": "cliOnly",
+    "apiBreadth": "none",
+    "existingMcp": "community",
+    "mcpUrl": "https://github.com/peng-shawn/mermaid-mcp-server",
+    "buildable": "no",
+    "mainBlocker": "notAnApi",
+    "verdictReason": "A local CLI with no hosted API and no credentials, so there is nothing for an agent toolkit to authenticate against. Only third-party MCP servers exist (peng-shawn, not mermaid-js); the mermaid-cli README documents a Node.js API that is not covered by semver.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "quote": "This is a command-line interface (CLI) for mermaid."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "quote": "This is a command-line interface (CLI) for mermaid."
+     },
+     {
+      "field": "apiType",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "quote": "It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://github.com/peng-shawn/mermaid-mcp-server",
+      "quote": "A Model Context Protocol (MCP) server that converts Mermaid diagrams to PNG images or SVG files."
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "Command-line tool that renders Mermaid diagram definition files to SVG, PNG or PDF.",
+    "authMethods": [
+     "none"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "noPublicApi",
+    "apiType": "cliOnly",
+    "apiBreadth": "none",
+    "existingMcp": "community",
+    "mcpUrl": "https://github.com/peng-shawn/mermaid-mcp-server",
+    "buildable": "no",
+    "mainBlocker": "notAnApi",
+    "verdictReason": "A local CLI with no hosted API and no credentials, so there is nothing for an agent toolkit to authenticate against. Only third-party MCP servers exist (peng-shawn, not mermaid-js); the mermaid-cli README documents a Node.js API that is not covered by semver.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "quote": "This is a command-line interface (CLI) for mermaid."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "quote": "This is a command-line interface (CLI) for mermaid."
+     },
+     {
+      "field": "apiType",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "quote": "It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://github.com/peng-shawn/mermaid-mcp-server",
+      "quote": "A Model Context Protocol (MCP) server that converts Mermaid diagrams to PNG images or SVG files."
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "quote": "This is a command-line interface (CLI) for mermaid.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "quote": "This is a command-line interface (CLI) for mermaid.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "quote": "It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://github.com/peng-shawn/mermaid-mcp-server",
+     "quote": "A Model Context Protocol (MCP) server that converts Mermaid diagrams to PNG images or SVG files.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "quote": "This is a command-line interface (CLI) for mermaid.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "quote": "This is a command-line interface (CLI) for mermaid.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "quote": "It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://github.com/peng-shawn/mermaid-mcp-server",
+     "quote": "A Model Context Protocol (MCP) server that converts Mermaid diagrams to PNG images or SVG files.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 98,
@@ -14588,13 +16145,169 @@
    "name": "Grain",
    "category": "AI, Research and Media-native",
    "hint": "grain.com (meeting notes)",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "Meeting recorder and notes tool with a public API for recordings, highlights, uploads and playlists, plus an official MCP server.",
+    "authMethods": [
+     "oauth2",
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "official",
+    "mcpUrl": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "Personal access tokens are self-generated in Grain settings, and OAuth2 is documented for integrations; no plan or approval requirement is stated on the pages read. Coverage is strong for recordings and playlists but creation is limited for clips, stories and uploads, so breadth is medium. Official MCP server is documented in Grain's support center.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+      "quote": "Grain's MCP server uses OAuth and HTTPS."
+     },
+     {
+      "field": "authMethods",
+      "url": "https://developers.grain.com/",
+      "quote": "A Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://developers.grain.com/",
+      "quote": "A Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain."
+     },
+     {
+      "field": "apiType",
+      "url": "https://developers.grain.com/",
+      "quote": "The Grain API lets you read and manage recordings, highlights, uploads, and more."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+      "quote": "For technical setup and the full tool reference, see the Grain MCP developer docs."
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "Meeting recorder and notes tool with a public API for recordings, highlights, uploads and playlists, plus an official MCP server.",
+    "authMethods": [
+     "oauth2",
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "official",
+    "mcpUrl": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "Personal access tokens are self-generated in Grain settings, and OAuth2 is documented for integrations; no plan or approval requirement is stated on the pages read. Coverage is strong for recordings and playlists but creation is limited for clips, stories and uploads, so breadth is medium. Official MCP server is documented in Grain's support center.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+      "quote": "Grain's MCP server uses OAuth and HTTPS."
+     },
+     {
+      "field": "authMethods",
+      "url": "https://developers.grain.com/",
+      "quote": "A Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://developers.grain.com/",
+      "quote": "A Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain."
+     },
+     {
+      "field": "apiType",
+      "url": "https://developers.grain.com/",
+      "quote": "The Grain API lets you read and manage recordings, highlights, uploads, and more."
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+      "quote": "For technical setup and the full tool reference, see the Grain MCP developer docs."
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+     "quote": "Grain's MCP server uses OAuth and HTTPS.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "authMethods",
+     "url": "https://developers.grain.com/",
+     "quote": "A Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://developers.grain.com/",
+     "quote": "A Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://developers.grain.com/",
+     "quote": "The Grain API lets you read and manage recordings, highlights, uploads, and more.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+     "quote": "For technical setup and the full tool reference, see the Grain MCP developer docs.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+     "quote": "Grain's MCP server uses OAuth and HTTPS.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "authMethods",
+     "url": "https://developers.grain.com/",
+     "quote": "A Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://developers.grain.com/",
+     "quote": "A Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "apiType",
+     "url": "https://developers.grain.com/",
+     "quote": "The Grain API lets you read and manage recordings, highlights, uploads, and more.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+     "quote": "For technical setup and the full tool reference, see the Grain MCP developer docs.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 100,
@@ -14605,80 +16318,75 @@
     "composioAuthMethods": [
      "apiKey"
     ],
-    "status": "noRecord",
-    "missing": [
-     "apiKey"
-    ]
+    "status": "agrees",
+    "missing": []
    }
   }
  ],
  "patterns": {
   "totals": {
-   "apps": 89,
-   "withRecord": 85,
-   "withoutRecord": [
-    "Telegram",
-    "WooCommerce",
-    "Ahrefs",
-    "Supabase"
-   ]
+   "apps": 98,
+   "withRecord": 98,
+   "withoutRecord": []
   },
   "authMethodCounts": {
-   "apiKey": 68,
-   "oauth2": 56,
-   "basic": 9,
-   "jwt": 5,
-   "none": 1
+   "apiKey": 79,
+   "oauth2": 63,
+   "basic": 11,
+   "jwt": 6,
+   "none": 2,
+   "other": 1
   },
   "authCombinationCounts": {
-   "apiKey+oauth2": 35,
-   "apiKey": 24,
+   "apiKey+oauth2": 40,
+   "apiKey": 28,
    "oauth2": 11,
    "apiKey+basic+oauth2": 5,
-   "apiKey+jwt+oauth2": 2,
+   "apiKey+jwt+oauth2": 3,
+   "basic+oauth2": 2,
    "jwt+oauth2": 2,
-   "basic+oauth2": 1,
+   "none": 2,
    "apiKey+basic+jwt": 1,
    "apiKey+basic": 1,
+   "apiKey+basic+other": 1,
    "basic": 1,
-   "none": 1,
    "": 1
   },
   "accessLevelCounts": {
-   "selfServeFree": 57,
-   "paidPlan": 13,
+   "selfServeFree": 67,
+   "paidPlan": 14,
+   "selfServeTrial": 6,
    "adminApproval": 6,
-   "selfServeTrial": 5,
-   "partnerGated": 2,
-   "noPublicApi": 2
+   "noPublicApi": 3,
+   "partnerGated": 2
   },
   "apiTypeCounts": {
-   "rest": 72,
+   "rest": 84,
    "restAndGraphql": 6,
    "graphql": 3,
    "other": 2,
-   "cliOnly": 1,
+   "cliOnly": 2,
    "none": 1
   },
   "existingMcpCounts": {
-   "official": 58,
-   "community": 15,
+   "official": 69,
+   "community": 17,
    "none": 12
   },
   "buildableCounts": {
-   "yes": 61,
-   "partial": 20,
-   "no": 4
+   "yes": 71,
+   "partial": 22,
+   "no": 5
   },
   "mainBlockerCounts": {
-   "none": 62,
-   "paidPlanRequired": 9,
+   "none": 72,
+   "paidPlanRequired": 11,
    "adminApprovalRequired": 4,
    "thinOrMissingDocs": 3,
    "appReviewRequired": 2,
    "partnerOrSalesGate": 2,
-   "narrowApi": 2,
-   "notAnApi": 1
+   "notAnApi": 2,
+   "narrowApi": 2
   },
   "oauthAppReviewRequired": 6,
   "byCategory": {
@@ -14715,21 +16423,21 @@
     "selfServe": 8
    },
    "Communications and Messaging": {
-    "apps": 9,
+    "apps": 10,
     "accessLevel": {
-     "selfServeFree": 8,
+     "selfServeFree": 9,
      "paidPlan": 1
     },
     "buildable": {
-     "yes": 8,
+     "yes": 9,
      "partial": 1
     },
     "existingMcp": {
      "official": 6,
      "none": 1,
-     "community": 2
+     "community": 3
     },
-    "selfServe": 8
+    "selfServe": 9
    },
    "Marketing, Ads, Email and Social": {
     "apps": 10,
@@ -14751,109 +16459,113 @@
     "selfServe": 6
    },
    "Ecommerce": {
-    "apps": 9,
+    "apps": 10,
     "accessLevel": {
-     "selfServeFree": 6,
+     "selfServeFree": 7,
      "partnerGated": 1,
      "paidPlan": 1,
      "adminApproval": 1
     },
     "buildable": {
-     "yes": 8,
+     "yes": 9,
      "no": 1
     },
     "existingMcp": {
-     "official": 6,
+     "official": 7,
      "community": 2,
      "none": 1
     },
-    "selfServe": 6
+    "selfServe": 7
    },
    "Data, SEO and Scraping": {
-    "apps": 9,
+    "apps": 10,
     "accessLevel": {
      "selfServeFree": 5,
      "selfServeTrial": 2,
+     "paidPlan": 1,
      "noPublicApi": 1,
      "partnerGated": 1
     },
     "buildable": {
      "yes": 5,
-     "partial": 3,
+     "partial": 4,
      "no": 1
     },
     "existingMcp": {
-     "official": 6,
+     "official": 7,
      "community": 1,
      "none": 2
     },
     "selfServe": 7
    },
    "Developer, Infra and Data platforms": {
-    "apps": 7,
+    "apps": 10,
     "accessLevel": {
-     "selfServeFree": 5,
-     "selfServeTrial": 1,
+     "selfServeFree": 7,
+     "selfServeTrial": 2,
      "paidPlan": 1
     },
     "buildable": {
-     "yes": 5,
-     "partial": 2
+     "yes": 7,
+     "partial": 3
     },
     "existingMcp": {
-     "official": 7
+     "official": 10
     },
-    "selfServe": 6
+    "selfServe": 9
    },
    "Productivity and Project Management": {
-    "apps": 7,
+    "apps": 10,
     "accessLevel": {
-     "selfServeFree": 6,
+     "selfServeFree": 9,
      "paidPlan": 1
     },
     "buildable": {
-     "yes": 5,
+     "yes": 8,
      "partial": 2
     },
     "existingMcp": {
-     "official": 7
+     "official": 10
     },
-    "selfServe": 6
+    "selfServe": 9
    },
    "Finance and Fintech": {
-    "apps": 7,
+    "apps": 8,
     "accessLevel": {
-     "selfServeFree": 3,
+     "selfServeFree": 4,
      "noPublicApi": 1,
      "paidPlan": 2,
      "adminApproval": 1
     },
     "buildable": {
-     "yes": 2,
+     "yes": 3,
      "partial": 4,
      "no": 1
     },
     "existingMcp": {
-     "official": 5,
+     "official": 6,
      "none": 2
     },
-    "selfServe": 3
+    "selfServe": 4
    },
    "AI, Research and Media-native": {
-    "apps": 7,
+    "apps": 10,
     "accessLevel": {
      "paidPlan": 4,
-     "selfServeFree": 3
+     "selfServeFree": 5,
+     "noPublicApi": 1
     },
     "buildable": {
      "partial": 4,
-     "yes": 3
+     "yes": 5,
+     "no": 1
     },
     "existingMcp": {
      "none": 2,
-     "official": 5
+     "official": 7,
+     "community": 1
     },
-    "selfServe": 3
+    "selfServe": 5
    }
   },
   "easyWins": [
@@ -14880,6 +16592,7 @@
    "Lark (Larksuite)",
    "Pumble",
    "Discord",
+   "Telegram",
    "WhatsApp Business",
    "Vonage",
    "Meta Ads",
@@ -14888,6 +16601,7 @@
    "Klaviyo",
    "systeme.io",
    "Shopify",
+   "WooCommerce",
    "BigCommerce",
    "Magento (Adobe Commerce)",
    "Ecwid",
@@ -14899,20 +16613,28 @@
    "Firecrawl",
    "Bright Data",
    "GitHub",
+   "Vercel",
    "Netlify",
    "Cloudflare",
+   "Supabase",
    "Neo4j",
    "MongoDB Atlas",
+   "Notion",
    "Airtable",
    "Linear",
+   "Jira",
    "Asana",
    "Monday.com",
+   "Coda",
    "Harvest",
    "Stripe",
    "Binance",
+   "Brex",
+   "Fathom",
    "Reducto",
    "Devin",
-   "YouTube Transcript"
+   "YouTube Transcript",
+   "Grain"
   ],
   "needsOutreach": [
    "Google Ads",
@@ -14928,10 +16650,11 @@
    "Pinterest",
    "Salesforce Commerce Cloud",
    "Sherlock",
-   "Paygent Connect"
+   "Paygent Connect",
+   "Mermaid CLI"
   ],
   "composioCatalog": {
-   "alreadyInCatalog": 66,
+   "alreadyInCatalog": 77,
    "notInCatalog": [
     "DealCloud",
     "LiveAgent",
@@ -14939,6 +16662,7 @@
     "Vonage",
     "GoHighLevel",
     "systeme.io",
+    "WooCommerce",
     "Salesforce Commerce Cloud",
     "Magento (Adobe Commerce)",
     "Squarespace",
@@ -14951,13 +16675,15 @@
     "Binance",
     "Paygent Connect",
     "iPayX",
-    "Reducto"
+    "Reducto",
+    "Mermaid CLI"
    ],
    "notInCatalogButEasyWin": [
     "LiveAgent",
     "Vonage",
     "GoHighLevel",
     "systeme.io",
+    "WooCommerce",
     "Magento (Adobe Commerce)",
     "Ecwid",
     "fanbasis",

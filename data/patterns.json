@@ -1,70 +1,67 @@
 {
   "totals": {
-    "apps": 89,
-    "withRecord": 85,
-    "withoutRecord": [
-      "Telegram",
-      "WooCommerce",
-      "Ahrefs",
-      "Supabase"
-    ]
+    "apps": 98,
+    "withRecord": 98,
+    "withoutRecord": []
   },
   "authMethodCounts": {
-    "apiKey": 68,
-    "oauth2": 56,
-    "basic": 9,
-    "jwt": 5,
-    "none": 1
+    "apiKey": 79,
+    "oauth2": 63,
+    "basic": 11,
+    "jwt": 6,
+    "none": 2,
+    "other": 1
   },
   "authCombinationCounts": {
-    "apiKey+oauth2": 35,
-    "apiKey": 24,
+    "apiKey+oauth2": 40,
+    "apiKey": 28,
     "oauth2": 11,
     "apiKey+basic+oauth2": 5,
-    "apiKey+jwt+oauth2": 2,
+    "apiKey+jwt+oauth2": 3,
+    "basic+oauth2": 2,
     "jwt+oauth2": 2,
-    "basic+oauth2": 1,
+    "none": 2,
     "apiKey+basic+jwt": 1,
     "apiKey+basic": 1,
+    "apiKey+basic+other": 1,
     "basic": 1,
-    "none": 1,
     "": 1
   },
   "accessLevelCounts": {
-    "selfServeFree": 57,
-    "paidPlan": 13,
+    "selfServeFree": 67,
+    "paidPlan": 14,
+    "selfServeTrial": 6,
     "adminApproval": 6,
-    "selfServeTrial": 5,
-    "partnerGated": 2,
-    "noPublicApi": 2
+    "noPublicApi": 3,
+    "partnerGated": 2
   },
   "apiTypeCounts": {
-    "rest": 72,
+    "rest": 84,
     "restAndGraphql": 6,
     "graphql": 3,
     "other": 2,
-    "cliOnly": 1,
+    "cliOnly": 2,
     "none": 1
   },
   "existingMcpCounts": {
-    "official": 58,
-    "community": 15,
+    "official": 69,
+    "community": 17,
     "none": 12
   },
   "buildableCounts": {
-    "yes": 61,
-    "partial": 20,
-    "no": 4
+    "yes": 71,
+    "partial": 22,
+    "no": 5
   },
   "mainBlockerCounts": {
-    "none": 62,
-    "paidPlanRequired": 9,
+    "none": 72,
+    "paidPlanRequired": 11,
     "adminApprovalRequired": 4,
     "thinOrMissingDocs": 3,
     "appReviewRequired": 2,
     "partnerOrSalesGate": 2,
-    "narrowApi": 2,
-    "notAnApi": 1
+    "notAnApi": 2,
+    "narrowApi": 2
   },
   "oauthAppReviewRequired": 6,
   "byCategory": {
@@ -101,21 +98,21 @@
       "selfServe": 8
     },
     "Communications and Messaging": {
-      "apps": 9,
+      "apps": 10,
       "accessLevel": {
-        "selfServeFree": 8,
+        "selfServeFree": 9,
         "paidPlan": 1
       },
       "buildable": {
-        "yes": 8,
+        "yes": 9,
         "partial": 1
       },
       "existingMcp": {
         "official": 6,
         "none": 1,
-        "community": 2
+        "community": 3
       },
-      "selfServe": 8
+      "selfServe": 9
     },
     "Marketing, Ads, Email and Social": {
       "apps": 10,
@@ -137,109 +134,113 @@
       "selfServe": 6
     },
     "Ecommerce": {
-      "apps": 9,
+      "apps": 10,
       "accessLevel": {
-        "selfServeFree": 6,
+        "selfServeFree": 7,
         "partnerGated": 1,
         "paidPlan": 1,
         "adminApproval": 1
       },
       "buildable": {
-        "yes": 8,
+        "yes": 9,
         "no": 1
       },
       "existingMcp": {
-        "official": 6,
+        "official": 7,
         "community": 2,
         "none": 1
       },
-      "selfServe": 6
+      "selfServe": 7
     },
     "Data, SEO and Scraping": {
-      "apps": 9,
+      "apps": 10,
       "accessLevel": {
         "selfServeFree": 5,
         "selfServeTrial": 2,
+        "paidPlan": 1,
         "noPublicApi": 1,
         "partnerGated": 1
       },
       "buildable": {
         "yes": 5,
-        "partial": 3,
+        "partial": 4,
         "no": 1
       },
       "existingMcp": {
-        "official": 6,
+        "official": 7,
         "community": 1,
         "none": 2
       },
       "selfServe": 7
     },
     "Developer, Infra and Data platforms": {
-      "apps": 7,
+      "apps": 10,
       "accessLevel": {
-        "selfServeFree": 5,
-        "selfServeTrial": 1,
+        "selfServeFree": 7,
+        "selfServeTrial": 2,
         "paidPlan": 1
       },
       "buildable": {
-        "yes": 5,
-        "partial": 2
+        "yes": 7,
+        "partial": 3
       },
       "existingMcp": {
-        "official": 7
+        "official": 10
       },
-      "selfServe": 6
+      "selfServe": 9
     },
     "Productivity and Project Management": {
-      "apps": 7,
+      "apps": 10,
       "accessLevel": {
-        "selfServeFree": 6,
+        "selfServeFree": 9,
         "paidPlan": 1
       },
       "buildable": {
-        "yes": 5,
+        "yes": 8,
         "partial": 2
       },
       "existingMcp": {
-        "official": 7
+        "official": 10
       },
-      "selfServe": 6
+      "selfServe": 9
     },
     "Finance and Fintech": {
-      "apps": 7,
+      "apps": 8,
       "accessLevel": {
-        "selfServeFree": 3,
+        "selfServeFree": 4,
         "noPublicApi": 1,
         "paidPlan": 2,
         "adminApproval": 1
       },
       "buildable": {
-        "yes": 2,
+        "yes": 3,
         "partial": 4,
         "no": 1
       },
       "existingMcp": {
-        "official": 5,
+        "official": 6,
         "none": 2
       },
-      "selfServe": 3
+      "selfServe": 4
     },
     "AI, Research and Media-native": {
-      "apps": 7,
+      "apps": 10,
       "accessLevel": {
         "paidPlan": 4,
-        "selfServeFree": 3
+        "selfServeFree": 5,
+        "noPublicApi": 1
       },
       "buildable": {
         "partial": 4,
-        "yes": 3
+        "yes": 5,
+        "no": 1
       },
       "existingMcp": {
         "none": 2,
-        "official": 5
+        "official": 7,
+        "community": 1
       },
-      "selfServe": 3
+      "selfServe": 5
     }
   },
   "easyWins": [
@@ -266,6 +267,7 @@
     "Lark (Larksuite)",
     "Pumble",
     "Discord",
+    "Telegram",
     "WhatsApp Business",
     "Vonage",
     "Meta Ads",
@@ -274,6 +276,7 @@
     "Klaviyo",
     "systeme.io",
     "Shopify",
+    "WooCommerce",
     "BigCommerce",
     "Magento (Adobe Commerce)",
     "Ecwid",
@@ -285,20 +288,28 @@
     "Firecrawl",
     "Bright Data",
     "GitHub",
+    "Vercel",
     "Netlify",
     "Cloudflare",
+    "Supabase",
     "Neo4j",
     "MongoDB Atlas",
+    "Notion",
     "Airtable",
     "Linear",
+    "Jira",
     "Asana",
     "Monday.com",
+    "Coda",
     "Harvest",
     "Stripe",
     "Binance",
+    "Brex",
+    "Fathom",
     "Reducto",
     "Devin",
-    "YouTube Transcript"
+    "YouTube Transcript",
+    "Grain"
   ],
   "needsOutreach": [
     "Google Ads",
@@ -314,10 +325,11 @@
     "Pinterest",
     "Salesforce Commerce Cloud",
     "Sherlock",
-    "Paygent Connect"
+    "Paygent Connect",
+    "Mermaid CLI"
   ],
   "composioCatalog": {
-    "alreadyInCatalog": 66,
+    "alreadyInCatalog": 77,
     "notInCatalog": [
       "DealCloud",
       "LiveAgent",
@@ -325,6 +337,7 @@
       "Vonage",
       "GoHighLevel",
       "systeme.io",
+      "WooCommerce",
       "Salesforce Commerce Cloud",
       "Magento (Adobe Commerce)",
       "Squarespace",
@@ -337,13 +350,15 @@
       "Binance",
       "Paygent Connect",
       "iPayX",
-      "Reducto"
+      "Reducto",
+      "Mermaid CLI"
     ],
     "notInCatalogButEasyWin": [
       "LiveAgent",
       "Vonage",
       "GoHighLevel",
       "systeme.io",
+      "WooCommerce",
       "Magento (Adobe Commerce)",
       "Ecwid",
       "fanbasis",

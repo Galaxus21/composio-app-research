@@ -33,7 +33,13 @@ def main():
 
 def scorePass(passName):
     gold = json.loads(GOLD_SAMPLE_PATH.read_text(encoding="utf-8"))
-    recordsById = {result["id"]: result["record"] for result in loadPassResults(passName)}
+    # A Claude sub-agent first-pass record is not scored: the same model family wrote the gold
+    # labels, so agreement would be inflated. Re-researched records are scored and disclosed.
+    recordsById = {
+        result["id"]: result["record"]
+        for result in loadPassResults(passName)
+        if "sub-agent" not in result.get("model", "") or "reResearchedFrom" in result
+    }
     # A gold app the pass never finished has no answer to compare; it is left out and counted.
     comparisons = [
         compareField(entry, recordsById[entry["id"]], fieldName)
