@@ -1,0 +1,14 @@
+{
+  "id": 67,
+  "name": "Snowflake",
+  "toolkitSlug": "snowflake",
+  "mcpToolkitSlug": null,
+  "mcpContradiction": false,
+  "composioAuthMethods": [
+    "oauth2"
+  ],
+  "status": "noRecord",
+  "missing": [
+    "oauth2"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": 65,
+  "name": "Supabase",
+  "toolkitSlug": "supabase",
+  "mcpToolkitSlug": "supabase_mcp",
+  "mcpContradiction": false,
+  "composioAuthMethods": [
+    "apiKey",
+    "oauth2"
+  ],
+  "status": "noRecord",
+  "missing": [
+    "apiKey",
+    "oauth2"
+  ]
+}

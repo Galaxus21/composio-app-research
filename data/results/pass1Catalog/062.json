@@ -1,0 +1,16 @@
+{
+  "id": 62,
+  "name": "Vercel",
+  "toolkitSlug": "vercel",
+  "mcpToolkitSlug": "vercel_mcp",
+  "mcpContradiction": false,
+  "composioAuthMethods": [
+    "apiKey",
+    "oauth2"
+  ],
+  "status": "noRecord",
+  "missing": [
+    "apiKey",
+    "oauth2"
+  ]
+}

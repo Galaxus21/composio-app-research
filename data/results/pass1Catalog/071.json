@@ -1,0 +1,16 @@
+{
+  "id": 71,
+  "name": "Notion",
+  "toolkitSlug": "notion",
+  "mcpToolkitSlug": "notion_mcp",
+  "mcpContradiction": false,
+  "composioAuthMethods": [
+    "apiKey",
+    "oauth2"
+  ],
+  "status": "noRecord",
+  "missing": [
+    "apiKey",
+    "oauth2"
+  ]
+}

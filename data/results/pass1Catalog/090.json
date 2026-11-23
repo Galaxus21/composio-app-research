@@ -1,0 +1,14 @@
+{
+  "id": 90,
+  "name": "PitchBook",
+  "toolkitSlug": "pitchbook",
+  "mcpToolkitSlug": null,
+  "mcpContradiction": false,
+  "composioAuthMethods": [
+    "apiKey"
+  ],
+  "status": "noRecord",
+  "missing": [
+    "apiKey"
+  ]
+}

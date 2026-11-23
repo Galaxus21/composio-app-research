@@ -1,0 +1,16 @@
+{
+  "id": 93,
+  "name": "Fathom",
+  "toolkitSlug": "fathom",
+  "mcpToolkitSlug": null,
+  "mcpContradiction": false,
+  "composioAuthMethods": [
+    "apiKey",
+    "oauth2"
+  ],
+  "status": "noRecord",
+  "missing": [
+    "apiKey",
+    "oauth2"
+  ]
+}
