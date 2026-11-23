@@ -14758,13 +14758,29 @@
     "oauthAppReviewRequired": false,
     "accessLevel": "partnerGated",
     "apiType": "rest",
-    "apiBreadth": "medium",
+    "apiBreadth": "broad",
     "existingMcp": "none",
     "mcpUrl": "",
     "buildable": "partial",
     "mainBlocker": "partnerOrSalesGate",
-    "verdictReason": "UNVERIFIED, no vendor evidence: every pitchbook.com page returned HTTP 403, so these values come from third-party search results only. NO VENDOR QUOTES OBTAINED. Every pitchbook.com page fetched (help/pitchbook-api, help/PitchBook-api, help/data-feed-api-crm, help/data-feed-api-crm-direct-data-solutions, products/direct-access-data, products/direct-access-data/api, developers, blog/what-is-direct-data) and files.pitchbook.com returned HTTP 403. The values above come from search-result snippets of pitchbook.com pages and third-party sites, not from quotable vendor text, so they are unverified. Snippet claims: API is a separate offering needing a standalone contract; access starts with the Direct Data team; connection set up via API key or authentication token; base URL https://api.pitchbook.com. Third-party sources give an 'PB-Token' Authorization header and say keys are provisioned via a paid add-on. apiType 'rest', apiBreadth 'medium', and existingMcp 'none' are not supported by any fetched vendor page; existingMcp 'none' is a search-absence finding only. Because no vendor quote exists, the evidence array is empty for this product. Re-run with an authenticated or alternate vendor source before relying on these values.",
-    "evidence": []
+    "verdictReason": "PARTLY EVIDENCED (read by hand in a browser): the vendor pages confirm a REST API on all PitchBook entity types and a sales-led, pay-for-what-you-use model reached through a contact form. They do not state the auth method or any MCP server, so apiKey and existingMcp none are unconfirmed; the API reference sits behind a Morningstar login.",
+    "evidence": [
+     {
+      "field": "apiType",
+      "url": "https://pitchbook.com/products/direct-access-data/api",
+      "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://pitchbook.com/products/direct-access-data/api",
+      "quote": "Our team of experts will work with you to ensure your organization can bridge any gap of understanding"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://pitchbook.com/products/direct-access-data",
+      "quote": "Choose the data that matters most to you and only pay for what you need."
+     }
+    ]
    },
    "error": null,
    "firstRecord": {
@@ -14775,18 +14791,78 @@
     "oauthAppReviewRequired": false,
     "accessLevel": "partnerGated",
     "apiType": "rest",
-    "apiBreadth": "medium",
+    "apiBreadth": "broad",
     "existingMcp": "none",
     "mcpUrl": "",
     "buildable": "partial",
     "mainBlocker": "partnerOrSalesGate",
-    "verdictReason": "UNVERIFIED, no vendor evidence: every pitchbook.com page returned HTTP 403, so these values come from third-party search results only. NO VENDOR QUOTES OBTAINED. Every pitchbook.com page fetched (help/pitchbook-api, help/PitchBook-api, help/data-feed-api-crm, help/data-feed-api-crm-direct-data-solutions, products/direct-access-data, products/direct-access-data/api, developers, blog/what-is-direct-data) and files.pitchbook.com returned HTTP 403. The values above come from search-result snippets of pitchbook.com pages and third-party sites, not from quotable vendor text, so they are unverified. Snippet claims: API is a separate offering needing a standalone contract; access starts with the Direct Data team; connection set up via API key or authentication token; base URL https://api.pitchbook.com. Third-party sources give an 'PB-Token' Authorization header and say keys are provisioned via a paid add-on. apiType 'rest', apiBreadth 'medium', and existingMcp 'none' are not supported by any fetched vendor page; existingMcp 'none' is a search-absence finding only. Because no vendor quote exists, the evidence array is empty for this product. Re-run with an authenticated or alternate vendor source before relying on these values.",
-    "evidence": []
+    "verdictReason": "PARTLY EVIDENCED (read by hand in a browser): the vendor pages confirm a REST API on all PitchBook entity types and a sales-led, pay-for-what-you-use model reached through a contact form. They do not state the auth method or any MCP server, so apiKey and existingMcp none are unconfirmed; the API reference sits behind a Morningstar login.",
+    "evidence": [
+     {
+      "field": "apiType",
+      "url": "https://pitchbook.com/products/direct-access-data/api",
+      "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://pitchbook.com/products/direct-access-data/api",
+      "quote": "Our team of experts will work with you to ensure your organization can bridge any gap of understanding"
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://pitchbook.com/products/direct-access-data",
+      "quote": "Choose the data that matters most to you and only pay for what you need."
+     }
+    ]
    },
    "reResearched": false,
    "model": "claude-haiku-5-5 (sub-agent)",
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "firstEvidence": [
+    {
+     "field": "apiType",
+     "url": "https://pitchbook.com/products/direct-access-data/api",
+     "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs",
+     "status": "pageUnreadable",
+     "detail": "HTTP 403"
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://pitchbook.com/products/direct-access-data/api",
+     "quote": "Our team of experts will work with you to ensure your organization can bridge any gap of understanding",
+     "status": "pageUnreadable",
+     "detail": "HTTP 403"
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://pitchbook.com/products/direct-access-data",
+     "quote": "Choose the data that matters most to you and only pay for what you need.",
+     "status": "pageUnreadable",
+     "detail": "HTTP 403"
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "apiType",
+     "url": "https://pitchbook.com/products/direct-access-data/api",
+     "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs",
+     "status": "pageUnreadable",
+     "detail": "HTTP 403"
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://pitchbook.com/products/direct-access-data/api",
+     "quote": "Our team of experts will work with you to ensure your organization can bridge any gap of understanding",
+     "status": "pageUnreadable",
+     "detail": "HTTP 403"
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://pitchbook.com/products/direct-access-data",
+     "quote": "Choose the data that matters most to you and only pay for what you need.",
+     "status": "pageUnreadable",
+     "detail": "HTTP 403"
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 90,

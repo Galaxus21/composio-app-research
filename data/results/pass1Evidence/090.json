@@ -1,5 +1,27 @@
 {
   "id": 90,
   "name": "PitchBook",
-  "checks": []
+  "checks": [
+    {
+      "field": "apiType",
+      "url": "https://pitchbook.com/products/direct-access-data/api",
+      "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs",
+      "status": "pageUnreadable",
+      "detail": "HTTP 403"
+    },
+    {
+      "field": "accessLevel",
+      "url": "https://pitchbook.com/products/direct-access-data/api",
+      "quote": "Our team of experts will work with you to ensure your organization can bridge any gap of understanding",
+      "status": "pageUnreadable",
+      "detail": "HTTP 403"
+    },
+    {
+      "field": "accessLevel",
+      "url": "https://pitchbook.com/products/direct-access-data",
+      "quote": "Choose the data that matters most to you and only pay for what you need.",
+      "status": "pageUnreadable",
+      "detail": "HTTP 403"
+    }
+  ]
 }
