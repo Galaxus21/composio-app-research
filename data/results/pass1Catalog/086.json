@@ -7,8 +7,6 @@
   "composioAuthMethods": [
     "oauth2"
   ],
-  "status": "noRecord",
-  "missing": [
-    "oauth2"
-  ]
+  "status": "agrees",
+  "missing": []
 }

@@ -1,12 +1,12 @@
 {
   "totals": {
-    "apps": 98,
-    "withRecord": 98,
+    "apps": 100,
+    "withRecord": 100,
     "withoutRecord": []
   },
   "authMethodCounts": {
-    "apiKey": 79,
-    "oauth2": 63,
+    "apiKey": 80,
+    "oauth2": 64,
     "basic": 11,
     "jwt": 6,
     "none": 2,
@@ -14,8 +14,8 @@
   },
   "authCombinationCounts": {
     "apiKey+oauth2": 40,
-    "apiKey": 28,
-    "oauth2": 11,
+    "apiKey": 29,
+    "oauth2": 12,
     "apiKey+basic+oauth2": 5,
     "apiKey+jwt+oauth2": 3,
     "basic+oauth2": 2,
@@ -28,15 +28,15 @@
     "": 1
   },
   "accessLevelCounts": {
-    "selfServeFree": 67,
+    "selfServeFree": 68,
     "paidPlan": 14,
     "selfServeTrial": 6,
     "adminApproval": 6,
-    "noPublicApi": 3,
-    "partnerGated": 2
+    "partnerGated": 3,
+    "noPublicApi": 3
   },
   "apiTypeCounts": {
-    "rest": 84,
+    "rest": 86,
     "restAndGraphql": 6,
     "graphql": 3,
     "other": 2,
@@ -44,22 +44,22 @@
     "none": 1
   },
   "existingMcpCounts": {
-    "official": 69,
+    "official": 70,
     "community": 17,
-    "none": 12
+    "none": 13
   },
   "buildableCounts": {
-    "yes": 71,
-    "partial": 22,
+    "yes": 72,
+    "partial": 23,
     "no": 5
   },
   "mainBlockerCounts": {
-    "none": 72,
+    "none": 73,
     "paidPlanRequired": 11,
     "adminApprovalRequired": 4,
+    "partnerOrSalesGate": 3,
     "thinOrMissingDocs": 3,
     "appReviewRequired": 2,
-    "partnerOrSalesGate": 2,
     "notAnApi": 2,
     "narrowApi": 2
   },
@@ -205,23 +205,24 @@
       "selfServe": 9
     },
     "Finance and Fintech": {
-      "apps": 8,
+      "apps": 10,
       "accessLevel": {
-        "selfServeFree": 4,
+        "selfServeFree": 5,
         "noPublicApi": 1,
         "paidPlan": 2,
-        "adminApproval": 1
+        "adminApproval": 1,
+        "partnerGated": 1
       },
       "buildable": {
-        "yes": 3,
-        "partial": 4,
+        "yes": 4,
+        "partial": 5,
         "no": 1
       },
       "existingMcp": {
-        "official": 6,
-        "none": 2
+        "official": 7,
+        "none": 3
       },
-      "selfServe": 4
+      "selfServe": 5
     },
     "AI, Research and Media-native": {
       "apps": 10,
@@ -304,6 +305,7 @@
     "Harvest",
     "Stripe",
     "Binance",
+    "QuickBooks",
     "Brex",
     "Fathom",
     "Reducto",
@@ -319,7 +321,8 @@
     "Salesforce Commerce Cloud",
     "Amazon Selling Partner",
     "Waterfall.io",
-    "Ramp"
+    "Ramp",
+    "PitchBook"
   ],
   "notBuildable": [
     "Pinterest",
@@ -329,7 +332,7 @@
     "Mermaid CLI"
   ],
   "composioCatalog": {
-    "alreadyInCatalog": 77,
+    "alreadyInCatalog": 79,
     "notInCatalog": [
       "DealCloud",
       "LiveAgent",

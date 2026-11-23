@@ -1,0 +1,27 @@
+{
+  "id": 86,
+  "name": "QuickBooks",
+  "checks": [
+    {
+      "field": "authMethods",
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company.",
+      "status": "quoteFound",
+      "detail": ""
+    },
+    {
+      "field": "accessLevel",
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "quote": "Go to the Intuit Developer Portal and create a new app",
+      "status": "quoteNotFound",
+      "detail": "quote is not on the cited page"
+    },
+    {
+      "field": "existingMcp",
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients.",
+      "status": "quoteFound",
+      "detail": ""
+    }
+  ]
+}

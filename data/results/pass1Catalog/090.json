@@ -7,8 +7,6 @@
   "composioAuthMethods": [
     "apiKey"
   ],
-  "status": "noRecord",
-  "missing": [
-    "apiKey"
-  ]
+  "status": "agrees",
+  "missing": []
 }

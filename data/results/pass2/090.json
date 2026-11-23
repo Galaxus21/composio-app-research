@@ -1,0 +1,33 @@
+{
+  "id": 90,
+  "name": "PitchBook",
+  "category": "Finance and Fintech",
+  "hint": "pitchbook.com (research API)",
+  "record": {
+    "oneLiner": "PitchBook Direct Data / API: a separately contracted add-on that issues API keys or authentication tokens through the Direct Data sales team.",
+    "authMethods": [
+      "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "partnerGated",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "none",
+    "mcpUrl": "",
+    "buildable": "partial",
+    "mainBlocker": "partnerOrSalesGate",
+    "verdictReason": "UNVERIFIED, no vendor evidence: every pitchbook.com page returned HTTP 403, so these values come from third-party search results only. NO VENDOR QUOTES OBTAINED. Every pitchbook.com page fetched (help/pitchbook-api, help/PitchBook-api, help/data-feed-api-crm, help/data-feed-api-crm-direct-data-solutions, products/direct-access-data, products/direct-access-data/api, developers, blog/what-is-direct-data) and files.pitchbook.com returned HTTP 403. The values above come from search-result snippets of pitchbook.com pages and third-party sites, not from quotable vendor text, so they are unverified. Snippet claims: API is a separate offering needing a standalone contract; access starts with the Direct Data team; connection set up via API key or authentication token; base URL https://api.pitchbook.com. Third-party sources give an 'PB-Token' Authorization header and say keys are provisioned via a paid add-on. apiType 'rest', apiBreadth 'medium', and existingMcp 'none' are not supported by any fetched vendor page; existingMcp 'none' is a search-absence finding only. Because no vendor quote exists, the evidence array is empty for this product. Re-run with an authenticated or alternate vendor source before relying on these values.",
+    "evidence": []
+  },
+  "validationProblems": [
+    "evidence: nothing cited for authMethods",
+    "evidence: nothing cited for accessLevel",
+    "evidence: nothing cited for apiType",
+    "evidence: nothing cited for existingMcp"
+  ],
+  "toolCalls": [],
+  "usage": {},
+  "hitTurnLimit": false,
+  "model": "claude-haiku-5-5 (sub-agent)",
+  "carriedFrom": "pass1"
+}

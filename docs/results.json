@@ -14101,13 +14101,119 @@
    "name": "QuickBooks",
    "category": "Finance and Fintech",
    "hint": "developer.intuit.com",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "QuickBooks Online Accounting API, OAuth 2.0 authenticated, with sandbox app setup on the Intuit Developer Portal and an Intuit-hosted MCP server repo.",
+    "authMethods": [
+     "oauth2"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "PARTLY EVIDENCED: Intuit developer pages could not be read, so apiType, apiBreadth and review requirements have no vendor quote. OAuth 2.0 is quoted from the Intuit-org MCP repo README; sandbox self-serve signup is quoted from the same README. apiType 'rest' has NO vendor quote (the Intuit developer doc pages returned only an empty 'Intuit Developer' shell), so it is unverified. apiBreadth 'broad' is inferred from that repo's README listing 29 entities with CRUD, which describes the MCP server, not the full vendor API, so it is unverified against vendor docs. existingMcp 'official' rests on the repo living under the intuit GitHub org; the README also says 'Based on Intuit's QuickBooks Online MCP Server', so the repo's official status is ambiguous and should be confirmed. oauthAppReviewRequired is false only because no vendor quote confirmed a review step; third-party guides say production keys need an Intuit publishing questionnaire and review, which is unverified. buildable 'yes' assumes the sandbox path; if production review is confirmed, change to partial with mainBlocker appReviewRequired. Quotes were obtained through a summarising fetch, not raw bytes, so they should be byte-checked before use.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "quote": "Go to the Intuit Developer Portal and create a new app"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients."
+     }
+    ]
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "QuickBooks Online Accounting API, OAuth 2.0 authenticated, with sandbox app setup on the Intuit Developer Portal and an Intuit-hosted MCP server repo.",
+    "authMethods": [
+     "oauth2"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "PARTLY EVIDENCED: Intuit developer pages could not be read, so apiType, apiBreadth and review requirements have no vendor quote. OAuth 2.0 is quoted from the Intuit-org MCP repo README; sandbox self-serve signup is quoted from the same README. apiType 'rest' has NO vendor quote (the Intuit developer doc pages returned only an empty 'Intuit Developer' shell), so it is unverified. apiBreadth 'broad' is inferred from that repo's README listing 29 entities with CRUD, which describes the MCP server, not the full vendor API, so it is unverified against vendor docs. existingMcp 'official' rests on the repo living under the intuit GitHub org; the README also says 'Based on Intuit's QuickBooks Online MCP Server', so the repo's official status is ambiguous and should be confirmed. oauthAppReviewRequired is false only because no vendor quote confirmed a review step; third-party guides say production keys need an Intuit publishing questionnaire and review, which is unverified. buildable 'yes' assumes the sandbox path; if production review is confirmed, change to partial with mainBlocker appReviewRequired. Quotes were obtained through a summarising fetch, not raw bytes, so they should be byte-checked before use.",
+    "evidence": [
+     {
+      "field": "authMethods",
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company."
+     },
+     {
+      "field": "accessLevel",
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "quote": "Go to the Intuit Developer Portal and create a new app"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients."
+     }
+    ]
+   },
    "reResearched": false,
-   "model": null,
-   "firstEvidence": [],
-   "finalEvidence": [],
+   "model": "claude-haiku-5-5 (sub-agent)",
+   "firstEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+     "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+     "quote": "Go to the Intuit Developer Portal and create a new app",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+     "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
+   "finalEvidence": [
+    {
+     "field": "authMethods",
+     "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+     "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company.",
+     "status": "quoteFound",
+     "detail": ""
+    },
+    {
+     "field": "accessLevel",
+     "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+     "quote": "Go to the Intuit Developer Portal and create a new app",
+     "status": "quoteNotFound",
+     "detail": "quote is not on the cited page"
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+     "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients.",
+     "status": "quoteFound",
+     "detail": ""
+    }
+   ],
    "issues": [],
    "catalog": {
     "id": 86,
@@ -14118,10 +14224,8 @@
     "composioAuthMethods": [
      "oauth2"
     ],
-    "status": "noRecord",
-    "missing": [
-     "oauth2"
-    ]
+    "status": "agrees",
+    "missing": []
    }
   },
   {
@@ -14646,11 +14750,41 @@
    "name": "PitchBook",
    "category": "Finance and Fintech",
    "hint": "pitchbook.com (research API)",
-   "record": null,
-   "error": "not researched in time",
-   "firstRecord": null,
+   "record": {
+    "oneLiner": "PitchBook Direct Data / API: a separately contracted add-on that issues API keys or authentication tokens through the Direct Data sales team.",
+    "authMethods": [
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "partnerGated",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "none",
+    "mcpUrl": "",
+    "buildable": "partial",
+    "mainBlocker": "partnerOrSalesGate",
+    "verdictReason": "UNVERIFIED, no vendor evidence: every pitchbook.com page returned HTTP 403, so these values come from third-party search results only. NO VENDOR QUOTES OBTAINED. Every pitchbook.com page fetched (help/pitchbook-api, help/PitchBook-api, help/data-feed-api-crm, help/data-feed-api-crm-direct-data-solutions, products/direct-access-data, products/direct-access-data/api, developers, blog/what-is-direct-data) and files.pitchbook.com returned HTTP 403. The values above come from search-result snippets of pitchbook.com pages and third-party sites, not from quotable vendor text, so they are unverified. Snippet claims: API is a separate offering needing a standalone contract; access starts with the Direct Data team; connection set up via API key or authentication token; base URL https://api.pitchbook.com. Third-party sources give an 'PB-Token' Authorization header and say keys are provisioned via a paid add-on. apiType 'rest', apiBreadth 'medium', and existingMcp 'none' are not supported by any fetched vendor page; existingMcp 'none' is a search-absence finding only. Because no vendor quote exists, the evidence array is empty for this product. Re-run with an authenticated or alternate vendor source before relying on these values.",
+    "evidence": []
+   },
+   "error": null,
+   "firstRecord": {
+    "oneLiner": "PitchBook Direct Data / API: a separately contracted add-on that issues API keys or authentication tokens through the Direct Data sales team.",
+    "authMethods": [
+     "apiKey"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "partnerGated",
+    "apiType": "rest",
+    "apiBreadth": "medium",
+    "existingMcp": "none",
+    "mcpUrl": "",
+    "buildable": "partial",
+    "mainBlocker": "partnerOrSalesGate",
+    "verdictReason": "UNVERIFIED, no vendor evidence: every pitchbook.com page returned HTTP 403, so these values come from third-party search results only. NO VENDOR QUOTES OBTAINED. Every pitchbook.com page fetched (help/pitchbook-api, help/PitchBook-api, help/data-feed-api-crm, help/data-feed-api-crm-direct-data-solutions, products/direct-access-data, products/direct-access-data/api, developers, blog/what-is-direct-data) and files.pitchbook.com returned HTTP 403. The values above come from search-result snippets of pitchbook.com pages and third-party sites, not from quotable vendor text, so they are unverified. Snippet claims: API is a separate offering needing a standalone contract; access starts with the Direct Data team; connection set up via API key or authentication token; base URL https://api.pitchbook.com. Third-party sources give an 'PB-Token' Authorization header and say keys are provisioned via a paid add-on. apiType 'rest', apiBreadth 'medium', and existingMcp 'none' are not supported by any fetched vendor page; existingMcp 'none' is a search-absence finding only. Because no vendor quote exists, the evidence array is empty for this product. Re-run with an authenticated or alternate vendor source before relying on these values.",
+    "evidence": []
+   },
    "reResearched": false,
-   "model": null,
+   "model": "claude-haiku-5-5 (sub-agent)",
    "firstEvidence": [],
    "finalEvidence": [],
    "issues": [],
@@ -14663,10 +14797,8 @@
     "composioAuthMethods": [
      "apiKey"
     ],
-    "status": "noRecord",
-    "missing": [
-     "apiKey"
-    ]
+    "status": "agrees",
+    "missing": []
    }
   },
   {
@@ -16325,13 +16457,13 @@
  ],
  "patterns": {
   "totals": {
-   "apps": 98,
-   "withRecord": 98,
+   "apps": 100,
+   "withRecord": 100,
    "withoutRecord": []
   },
   "authMethodCounts": {
-   "apiKey": 79,
-   "oauth2": 63,
+   "apiKey": 80,
+   "oauth2": 64,
    "basic": 11,
    "jwt": 6,
    "none": 2,
@@ -16339,8 +16471,8 @@
   },
   "authCombinationCounts": {
    "apiKey+oauth2": 40,
-   "apiKey": 28,
-   "oauth2": 11,
+   "apiKey": 29,
+   "oauth2": 12,
    "apiKey+basic+oauth2": 5,
    "apiKey+jwt+oauth2": 3,
    "basic+oauth2": 2,
@@ -16353,15 +16485,15 @@
    "": 1
   },
   "accessLevelCounts": {
-   "selfServeFree": 67,
+   "selfServeFree": 68,
    "paidPlan": 14,
    "selfServeTrial": 6,
    "adminApproval": 6,
-   "noPublicApi": 3,
-   "partnerGated": 2
+   "partnerGated": 3,
+   "noPublicApi": 3
   },
   "apiTypeCounts": {
-   "rest": 84,
+   "rest": 86,
    "restAndGraphql": 6,
    "graphql": 3,
    "other": 2,
@@ -16369,22 +16501,22 @@
    "none": 1
   },
   "existingMcpCounts": {
-   "official": 69,
+   "official": 70,
    "community": 17,
-   "none": 12
+   "none": 13
   },
   "buildableCounts": {
-   "yes": 71,
-   "partial": 22,
+   "yes": 72,
+   "partial": 23,
    "no": 5
   },
   "mainBlockerCounts": {
-   "none": 72,
+   "none": 73,
    "paidPlanRequired": 11,
    "adminApprovalRequired": 4,
+   "partnerOrSalesGate": 3,
    "thinOrMissingDocs": 3,
    "appReviewRequired": 2,
-   "partnerOrSalesGate": 2,
    "notAnApi": 2,
    "narrowApi": 2
   },
@@ -16530,23 +16662,24 @@
     "selfServe": 9
    },
    "Finance and Fintech": {
-    "apps": 8,
+    "apps": 10,
     "accessLevel": {
-     "selfServeFree": 4,
+     "selfServeFree": 5,
      "noPublicApi": 1,
      "paidPlan": 2,
-     "adminApproval": 1
+     "adminApproval": 1,
+     "partnerGated": 1
     },
     "buildable": {
-     "yes": 3,
-     "partial": 4,
+     "yes": 4,
+     "partial": 5,
      "no": 1
     },
     "existingMcp": {
-     "official": 6,
-     "none": 2
+     "official": 7,
+     "none": 3
     },
-    "selfServe": 4
+    "selfServe": 5
    },
    "AI, Research and Media-native": {
     "apps": 10,
@@ -16629,6 +16762,7 @@
    "Harvest",
    "Stripe",
    "Binance",
+   "QuickBooks",
    "Brex",
    "Fathom",
    "Reducto",
@@ -16644,7 +16778,8 @@
    "Salesforce Commerce Cloud",
    "Amazon Selling Partner",
    "Waterfall.io",
-   "Ramp"
+   "Ramp",
+   "PitchBook"
   ],
   "notBuildable": [
    "Pinterest",
@@ -16654,7 +16789,7 @@
    "Mermaid CLI"
   ],
   "composioCatalog": {
-   "alreadyInCatalog": 77,
+   "alreadyInCatalog": 79,
    "notInCatalog": [
     "DealCloud",
     "LiveAgent",

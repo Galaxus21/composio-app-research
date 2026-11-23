@@ -1,0 +1,46 @@
+{
+  "id": 86,
+  "name": "QuickBooks",
+  "category": "Finance and Fintech",
+  "hint": "developer.intuit.com",
+  "record": {
+    "oneLiner": "QuickBooks Online Accounting API, OAuth 2.0 authenticated, with sandbox app setup on the Intuit Developer Portal and an Intuit-hosted MCP server repo.",
+    "authMethods": [
+      "oauth2"
+    ],
+    "oauthAppReviewRequired": false,
+    "accessLevel": "selfServeFree",
+    "apiType": "rest",
+    "apiBreadth": "broad",
+    "existingMcp": "official",
+    "mcpUrl": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "buildable": "yes",
+    "mainBlocker": "none",
+    "verdictReason": "PARTLY EVIDENCED: Intuit developer pages could not be read, so apiType, apiBreadth and review requirements have no vendor quote. OAuth 2.0 is quoted from the Intuit-org MCP repo README; sandbox self-serve signup is quoted from the same README. apiType 'rest' has NO vendor quote (the Intuit developer doc pages returned only an empty 'Intuit Developer' shell), so it is unverified. apiBreadth 'broad' is inferred from that repo's README listing 29 entities with CRUD, which describes the MCP server, not the full vendor API, so it is unverified against vendor docs. existingMcp 'official' rests on the repo living under the intuit GitHub org; the README also says 'Based on Intuit's QuickBooks Online MCP Server', so the repo's official status is ambiguous and should be confirmed. oauthAppReviewRequired is false only because no vendor quote confirmed a review step; third-party guides say production keys need an Intuit publishing questionnaire and review, which is unverified. buildable 'yes' assumes the sandbox path; if production review is confirmed, change to partial with mainBlocker appReviewRequired. Quotes were obtained through a summarising fetch, not raw bytes, so they should be byte-checked before use.",
+    "evidence": [
+      {
+        "field": "authMethods",
+        "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+        "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company."
+      },
+      {
+        "field": "accessLevel",
+        "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+        "quote": "Go to the Intuit Developer Portal and create a new app"
+      },
+      {
+        "field": "existingMcp",
+        "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+        "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients."
+      }
+    ]
+  },
+  "validationProblems": [
+    "evidence: nothing cited for apiType"
+  ],
+  "toolCalls": [],
+  "usage": {},
+  "hitTurnLimit": false,
+  "model": "claude-haiku-5-5 (sub-agent)",
+  "carriedFrom": "pass1"
+}
