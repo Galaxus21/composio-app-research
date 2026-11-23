@@ -37,6 +37,14 @@ the gold labellers alike.
 
 ## Honest limits
 
+- What actually ran: the research agent on all apps it could finish (44 by Gemini, 41 by Claude Haiku
+  sub-agents after Gemini throttled; 15 apps have no record). The evidence and catalog checks ran on every
+  finished record. The verifier agent ran only on a 5-app trial. Re-research ran only on the 7 flagged
+  reference apps, by Haiku sub-agents, because the Gemini run returned 503 for every call.
+- Reference-set accuracy: 33/61 cells (54%) on the first pass, 44/61 (72%) after re-research, on the 15
+  of 30 reference apps the Gemini agent finished. The re-research figure is likely optimistic because the
+  re-researcher is the same model family that wrote the reference labels.
+
 - The gold labels were written by independent AI agents reading live docs, not by a human. Cells they
   marked unsure are excluded from scoring, and the count is shown beside every accuracy figure.
 - The research agent uses a free-tier Gemini model that was frequently overloaded; the client falls

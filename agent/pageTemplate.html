@@ -137,10 +137,10 @@ function accuracy() {
 function process() {
   const steps = [
     ["1 Research agent", "Gemini searches (Composio Tavily tool), opens the docs, fills a fixed schema with a quote per field."],
-    ["2 Evidence check", "No model: re-opens every cited page and looks for the quote."],
-    ["3 Composio catalog", "Compares auth with Composio's 1,842-toolkit catalog."],
-    ["4 Verifier agent", "A second agent sees only the claims and tries to refute them."],
-    ["5 Re-research", "Flagged apps go back to the agent with the exact problems."],
+    ["2 Evidence check", "No model: re-opens every cited page and looks for the quote. Ran on all finished records."],
+    ["3 Composio catalog", "Compares auth with Composio's 1,842-toolkit catalog. Ran on all finished records."],
+    ["4 Verifier agent", "A second agent sees only the claims and tries to refute them. Built and tested on 5 trial apps only (it caught 5 wrong fields on fanbasis); not run on the 100 for lack of Gemini capacity."],
+    ["5 Re-research", "Flagged apps go back with the exact problems. Run only on the 7 flagged reference apps, by Claude Haiku sub-agents."],
     ["6 Score + patterns", "Scored against the reference set; every pattern number is computed by script."],
   ];
   set("flow", steps.map(([t, d]) => `<div class="step"><b>${t}</b>${d}</div>`).join(""));
