@@ -37,7 +37,7 @@ the gold labellers alike.
 
 ## Honest limits
 
-- What actually ran: the research agent on all apps it could finish (44 by Gemini, 56 by Claude Haiku sub-agents after Gemini throttled; PitchBook is partly evidenced (quotes read by hand in a browser because its pages return 403 to scripts; auth and MCP unconfirmed) and QuickBooks was read by hand in a real browser because Intuit's pages are empty shells to scripts; the 15 Haiku records for reference apps are not scored). The evidence and catalog checks ran on every
+- What actually ran: the research agent on all apps it could finish (44 by Gemini, 56 by Claude Haiku sub-agents after Gemini throttled; PitchBook was read by hand in a browser because its pages return 403 to scripts (its MCP server is confirmed by its OAuth metadata; REST auth is a best guess) and QuickBooks was read by hand in a real browser because Intuit's pages are empty shells to scripts; the 15 Haiku records for reference apps are not scored). The evidence and catalog checks ran on every
   finished record. The verifier agent ran only on a 5-app trial. Re-research ran only on the 7 flagged
   reference apps, by Haiku sub-agents, because the Gemini run returned 503 for every call.
 - Reference-set accuracy: 33/61 cells (54%) on the first pass, 44/61 (72%) after re-research, on the 15

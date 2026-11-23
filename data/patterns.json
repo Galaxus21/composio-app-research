@@ -6,15 +6,15 @@
   },
   "authMethodCounts": {
     "apiKey": 80,
-    "oauth2": 64,
+    "oauth2": 65,
     "basic": 11,
     "jwt": 6,
     "none": 2,
     "other": 1
   },
   "authCombinationCounts": {
-    "apiKey+oauth2": 40,
-    "apiKey": 29,
+    "apiKey+oauth2": 41,
+    "apiKey": 28,
     "oauth2": 12,
     "apiKey+basic+oauth2": 5,
     "apiKey+jwt+oauth2": 3,
@@ -44,9 +44,9 @@
     "none": 1
   },
   "existingMcpCounts": {
-    "official": 70,
+    "official": 71,
     "community": 17,
-    "none": 13
+    "none": 12
   },
   "buildableCounts": {
     "yes": 72,
@@ -219,8 +219,8 @@
         "no": 1
       },
       "existingMcp": {
-        "official": 7,
-        "none": 3
+        "official": 8,
+        "none": 2
       },
       "selfServe": 5
     },

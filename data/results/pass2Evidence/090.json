@@ -22,6 +22,20 @@
       "quote": "Choose the data that matters most to you and only pay for what you need.",
       "status": "pageUnreadable",
       "detail": "HTTP 403"
+    },
+    {
+      "field": "authMethods",
+      "url": "https://premium.mcp.pitchbook.com/.well-known/oauth-protected-resource",
+      "quote": "\"resource\":\"https://premium.mcp.pitchbook.com/mcp\",\"authorization_servers\":[\"https://mcp.pitchbook.com\"],\"bearer_methods_supported\":[\"header\"]",
+      "status": "pageUnreadable",
+      "detail": "too little text"
+    },
+    {
+      "field": "existingMcp",
+      "url": "https://premium.mcp.pitchbook.com/.well-known/oauth-protected-resource",
+      "quote": "\"resource\":\"https://premium.mcp.pitchbook.com/mcp\",\"authorization_servers\":[\"https://mcp.pitchbook.com\"],\"bearer_methods_supported\":[\"header\"]",
+      "status": "pageUnreadable",
+      "detail": "too little text"
     }
   ]
 }

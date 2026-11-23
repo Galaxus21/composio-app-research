@@ -14849,17 +14849,18 @@
    "record": {
     "oneLiner": "PitchBook Direct Data / API: a separately contracted add-on that issues API keys or authentication tokens through the Direct Data sales team.",
     "authMethods": [
+     "oauth2",
      "apiKey"
     ],
     "oauthAppReviewRequired": false,
     "accessLevel": "partnerGated",
     "apiType": "rest",
     "apiBreadth": "broad",
-    "existingMcp": "none",
-    "mcpUrl": "",
+    "existingMcp": "official",
+    "mcpUrl": "https://premium.mcp.pitchbook.com/mcp",
     "buildable": "partial",
     "mainBlocker": "partnerOrSalesGate",
-    "verdictReason": "PARTLY EVIDENCED (read by hand in a browser): the vendor pages confirm a REST API on all PitchBook entity types and a sales-led, pay-for-what-you-use model reached through a contact form. They do not state the auth method or any MCP server, so apiKey and existingMcp none are unconfirmed; the API reference sits behind a Morningstar login.",
+    "verdictReason": "Read by hand in a browser. PitchBook runs its own hosted MCP server at premium.mcp.pitchbook.com/mcp: the endpoint answers HTTP 401 without a token and its OAuth metadata names PitchBook's own authorization server, so MCP access uses OAuth and needs an account. The REST API is sales-led (contact form, pay for what you use), so a toolkit is partly buildable but gated. The REST API's own auth method is not stated on public pages (apiKey is a best guess); no pitchbook.com help page describing the MCP was found, so MCP eligibility is unconfirmed.",
     "evidence": [
      {
       "field": "apiType",
@@ -14875,6 +14876,16 @@
       "field": "accessLevel",
       "url": "https://pitchbook.com/products/direct-access-data",
       "quote": "Choose the data that matters most to you and only pay for what you need."
+     },
+     {
+      "field": "authMethods",
+      "url": "https://premium.mcp.pitchbook.com/.well-known/oauth-protected-resource",
+      "quote": "\"resource\":\"https://premium.mcp.pitchbook.com/mcp\",\"authorization_servers\":[\"https://mcp.pitchbook.com\"],\"bearer_methods_supported\":[\"header\"]"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://premium.mcp.pitchbook.com/.well-known/oauth-protected-resource",
+      "quote": "\"resource\":\"https://premium.mcp.pitchbook.com/mcp\",\"authorization_servers\":[\"https://mcp.pitchbook.com\"],\"bearer_methods_supported\":[\"header\"]"
      }
     ]
    },
@@ -14882,17 +14893,18 @@
    "firstRecord": {
     "oneLiner": "PitchBook Direct Data / API: a separately contracted add-on that issues API keys or authentication tokens through the Direct Data sales team.",
     "authMethods": [
+     "oauth2",
      "apiKey"
     ],
     "oauthAppReviewRequired": false,
     "accessLevel": "partnerGated",
     "apiType": "rest",
     "apiBreadth": "broad",
-    "existingMcp": "none",
-    "mcpUrl": "",
+    "existingMcp": "official",
+    "mcpUrl": "https://premium.mcp.pitchbook.com/mcp",
     "buildable": "partial",
     "mainBlocker": "partnerOrSalesGate",
-    "verdictReason": "PARTLY EVIDENCED (read by hand in a browser): the vendor pages confirm a REST API on all PitchBook entity types and a sales-led, pay-for-what-you-use model reached through a contact form. They do not state the auth method or any MCP server, so apiKey and existingMcp none are unconfirmed; the API reference sits behind a Morningstar login.",
+    "verdictReason": "Read by hand in a browser. PitchBook runs its own hosted MCP server at premium.mcp.pitchbook.com/mcp: the endpoint answers HTTP 401 without a token and its OAuth metadata names PitchBook's own authorization server, so MCP access uses OAuth and needs an account. The REST API is sales-led (contact form, pay for what you use), so a toolkit is partly buildable but gated. The REST API's own auth method is not stated on public pages (apiKey is a best guess); no pitchbook.com help page describing the MCP was found, so MCP eligibility is unconfirmed.",
     "evidence": [
      {
       "field": "apiType",
@@ -14908,6 +14920,16 @@
       "field": "accessLevel",
       "url": "https://pitchbook.com/products/direct-access-data",
       "quote": "Choose the data that matters most to you and only pay for what you need."
+     },
+     {
+      "field": "authMethods",
+      "url": "https://premium.mcp.pitchbook.com/.well-known/oauth-protected-resource",
+      "quote": "\"resource\":\"https://premium.mcp.pitchbook.com/mcp\",\"authorization_servers\":[\"https://mcp.pitchbook.com\"],\"bearer_methods_supported\":[\"header\"]"
+     },
+     {
+      "field": "existingMcp",
+      "url": "https://premium.mcp.pitchbook.com/.well-known/oauth-protected-resource",
+      "quote": "\"resource\":\"https://premium.mcp.pitchbook.com/mcp\",\"authorization_servers\":[\"https://mcp.pitchbook.com\"],\"bearer_methods_supported\":[\"header\"]"
      }
     ]
    },
@@ -14934,6 +14956,20 @@
      "quote": "Choose the data that matters most to you and only pay for what you need.",
      "status": "pageUnreadable",
      "detail": "HTTP 403"
+    },
+    {
+     "field": "authMethods",
+     "url": "https://premium.mcp.pitchbook.com/.well-known/oauth-protected-resource",
+     "quote": "\"resource\":\"https://premium.mcp.pitchbook.com/mcp\",\"authorization_servers\":[\"https://mcp.pitchbook.com\"],\"bearer_methods_supported\":[\"header\"]",
+     "status": "pageUnreadable",
+     "detail": "too little text"
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://premium.mcp.pitchbook.com/.well-known/oauth-protected-resource",
+     "quote": "\"resource\":\"https://premium.mcp.pitchbook.com/mcp\",\"authorization_servers\":[\"https://mcp.pitchbook.com\"],\"bearer_methods_supported\":[\"header\"]",
+     "status": "pageUnreadable",
+     "detail": "too little text"
     }
    ],
    "finalEvidence": [
@@ -14957,6 +14993,20 @@
      "quote": "Choose the data that matters most to you and only pay for what you need.",
      "status": "pageUnreadable",
      "detail": "HTTP 403"
+    },
+    {
+     "field": "authMethods",
+     "url": "https://premium.mcp.pitchbook.com/.well-known/oauth-protected-resource",
+     "quote": "\"resource\":\"https://premium.mcp.pitchbook.com/mcp\",\"authorization_servers\":[\"https://mcp.pitchbook.com\"],\"bearer_methods_supported\":[\"header\"]",
+     "status": "pageUnreadable",
+     "detail": "too little text"
+    },
+    {
+     "field": "existingMcp",
+     "url": "https://premium.mcp.pitchbook.com/.well-known/oauth-protected-resource",
+     "quote": "\"resource\":\"https://premium.mcp.pitchbook.com/mcp\",\"authorization_servers\":[\"https://mcp.pitchbook.com\"],\"bearer_methods_supported\":[\"header\"]",
+     "status": "pageUnreadable",
+     "detail": "too little text"
     }
    ],
    "issues": [],
@@ -16635,15 +16685,15 @@
   },
   "authMethodCounts": {
    "apiKey": 80,
-   "oauth2": 64,
+   "oauth2": 65,
    "basic": 11,
    "jwt": 6,
    "none": 2,
    "other": 1
   },
   "authCombinationCounts": {
-   "apiKey+oauth2": 40,
-   "apiKey": 29,
+   "apiKey+oauth2": 41,
+   "apiKey": 28,
    "oauth2": 12,
    "apiKey+basic+oauth2": 5,
    "apiKey+jwt+oauth2": 3,
@@ -16673,9 +16723,9 @@
    "none": 1
   },
   "existingMcpCounts": {
-   "official": 70,
+   "official": 71,
    "community": 17,
-   "none": 13
+   "none": 12
   },
   "buildableCounts": {
    "yes": 72,
@@ -16848,8 +16898,8 @@
      "no": 1
     },
     "existingMcp": {
-     "official": 7,
-     "none": 3
+     "official": 8,
+     "none": 2
     },
     "selfServe": 5
    },
